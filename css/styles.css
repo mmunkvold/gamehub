@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+/* Global */
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 1.8em;
+}
+
+h1 {
+  font-size: 2.7em;
+  text-transform: uppercase;
+  padding: 20px 20px 0px 20px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+}
+
+.logo {
+  max-height: 100px;
+  min-width: 158px;
+}
+
+nav,
+footer {
+  background-color: #698ebf;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  margin-left: auto;
+}
+/* Header */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.wider_item {
+  flex: 3;
+  margin: 10px;
+}
+
+.slogan {
+  padding-left: 50px;
+  color: #6e6d6d;
+  font-size: 33px;
+  margin-top: 30px;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+button {
+  background-color: #fff;
+  height: 30px;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+.signup {
+  border-radius: 15px;
+  background-color: #aaccff;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  text-align: center;
+  margin-left: 50px;
+  padding: 10px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.signup:hover {
+  background-color: #fff;
+  border: 2px solid #aaccff;
+}
+
+/* Main Menu */
+nav a {
+  color: #fff;
+}
+
+.menu_container {
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+
+.nav_main {
+  flex: 6;
+  background-color: #698ebf;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2em;
+  border-right: 2px solid #fff;
+}
+
+.nav_checkout {
+  flex: 1;
+  background-color: #f29727;
+  padding: 5px;
+  margin: 0;
+  font-size: 1.1em;
+  text-align: right;
+}
+.nav_checkout a:hover {
+  color: #698ebf;
+}
+
+.nav_checkout img {
+  padding: 2px 40px 0;
+}
+
+/* Links */
+.zoom {
+  transition: transform 0.1s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  text-decoration: none;
+  color: #698ebf;
+}
+a:visited {
+  color: #bf4f36;
+}
+
+a:hover {
+  color: #f29727;
+}
+
+.active {
+  font-weight: bold;
+  color: #43db64;
+}
+
+.readmore {
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 0.8em;
+}
+
+.readmore_featured {
+  color: #fff;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 0.8em;
+}
+
+/* Main */
+main {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+}
+
+.vertical_line {
+  padding: 0px 20px;
+  border-right: 2px solid #fff;
+}
+
+.horizontal_line {
+  padding: 10px;
+  border-bottom: 2px solid #dddddd;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px; 
+  gap: 10px;
+}
+
+.arrow {
+padding-top: 100px;
+}
+
+/* Shopping */
+.buy {
+  border-radius: 20px;
+  background-color: #f29727;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  text-align: left;
+  padding: 10px 20px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.buy:hover {
+  background-color: #fff;
+  background-image: #f29727;
+  border: 2px solid #f29727;
+}
+
+.add_wishlist {
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 20px 10px 5px;
+  margin-left: 10px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.add_wishlist:hover {
+  background-color: #fff;
+  border: 2px solid #698ebf;
+}
+
+/* Footer */
+
+.footer_container {
+  display: flex;
+  background-color: #6e6d6d;
+}
+.footer_main {
+  flex: 6;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.footer_social {
+  flex: 2;
+  padding: 5px;
+  margin: 0;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+
+.copyright {
+  color: #698ebf;
+  text-align: center;
+}
+
+/* Home Page */
+.top_featured {
+  background-color: #6e6d6d;
+  color: #fff;
+  display: flex;
+  padding-right: 40px;
+}
+
+.top_featured_game {
+  padding: 20px 30px 20px 0;
+  margin-left: 20px;
+}
+
+.top_featured_buttons {
+  padding: 20px 30px 20px 0;
+  margin-left: 20px;
+}
+
+.top_featured_arrow {
+margin: 200px 50px 0 100px;
+}
+
+.top_featured h2 {
+  padding: 110px 20px 0px 0px;
+  margin-top: 0;
+}
+
+.games_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.game_item {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.new_games {
+  color: #bf4f36;
+  margin: 20px;
+}
+
+.used_games {
+  color: #43db64;
+  margin: 20px;
+}
+/* Right Column Home Page */
+.recommended {
+  background-color: #dddddd;
+  box-shadow: 10px 5px 5px 5px grey;
+  margin: 10px 0px auto;
+  padding: 10px 30px 20px;
+}
+
+.recommended img {
+  display: block;
+  margin: 0 auto;
+}
+
+.recommended h3 {
+  font-style: italic;
+  box-shadow: none;
+  text-align: center;
+}
+
+.recommended_buttons {
+  
+}
+
+/* New Games */
+.popular {
+  display: flex;
+  padding: 10px;
+  margin: 0 30px 50px 30px;
+  text-align: center;
+}
+.popular_left {
+  flex:1;
+}
+.popular_center {
+  flex: 2;
+}
+
+.popular_right {
+  flex: 1;
+}
+
+
+.gamespage_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 70px;
+}
+
+.seemore_wrapper {
+  text-align: center;
+}
+.seemore {
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: lowercase;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 2px 1px 1px 1px grey;
+  }
+  
+  .seemore:hover {
+    background-color: lightgrey;
+    color: #fff;
+    border: 2px solid lightgrey;
+  }
+}
