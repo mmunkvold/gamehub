@@ -12,10 +12,10 @@
     <section>
       <header>
         <section class="container">
-          <img src="icons/logo_blue.png" href="index.html" class="logo item" alt="GameHub Logo" />
+          <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
           <div class="wider_item"></div>
-          <form action="search.html"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
           <a href="signup.html" class="signup">Sign up</a><p></p>
@@ -57,8 +57,9 @@
 
             <a href="#" class="readmore_featured">Read more...</a>    
             <p></p>          
-                <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+            <label for="add-to-cart">Add to Cart</label>
+            
+                <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
           </div>
           <a href="index2.html"><img src="icons/arrowwhite.png" class="top_featured_arrow zoom"></a>
           </div>
@@ -72,22 +73,25 @@
                 <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
                 <h3>Skull Part II</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></a>
-                <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+                <label for="add-to-cart">Add to Cart</label>
+
+                <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
               </div>
               <div class="game_item">
                 <img src="gamecovers/letherin.jpg" alt="Let Her In" />
                 <h3>Let Her In</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+                <label for="add-to-cart">Add to Cart</label>
+
+                <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
               </div>
               <div class="game_item">
                 <img src="gamecovers/robotwar.jpg" alt="Robot War" />
                 <h3>Robot War</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>                
-                <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+                <label for="add-to-cart">Add to Cart</label>
+
+                <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
                </div>
               <div class="game_item">
                 <div class="arrow">
@@ -102,22 +106,25 @@
               <img src="gamecovers/overwatch.jpg" alt="OverWatch" />
               <h3>OverWatch</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-              <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+              <label for="add-to-cart">Add to Cart</label>
+
+                <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
               </div>
               <div class="game_item">
               <img src="gamecovers/bluedragon.jpg" alt="Blue Dragon" />
               <h3>Blue Dragon</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-              <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+              <label for="add-to-cart">Add to Cart</label>
+
+              <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
               </div>
               <div class="game_item">
                 <img src="gamecovers/comeseehim.jpg" alt="Come See Him" />
                 <h3>Come See Him</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-                <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+                <label for="add-to-cart">Add to Cart</label>
+
+                <a href="#" class="add_wishlist "><img src="icons/heart.png" class="zoom"></a>
               </div>
               <div class="game_item">
                 <div class="arrow">
@@ -144,9 +151,21 @@
             </p>
             <a href="#" class="readmore_featured">Read more &hellip;</a>
             <p></p> 
-            <div class="recommended_buttons">
-              <a href="checkout.html" class="buy">add to cart <img src="icons/cart.png"></a>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png"></a>
+              <label for="add-to-cart">Add to Cart</label>
+<input type="checkbox" id="add-to-cart"><a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
+<div class="cart"> <h3>Your Shopping Cart</h3>
+  <div class="container">
+    <div class="column-left">
+      <img src="gamecovers/skullpartII_mini.jpg" alt="Skull Part 2">
+      <img src="gamecovers/overwatch_mini.jpg" alt="OverWatch"></div>
+    <div class="column-right">
+      <ul>
+        <li>Skull Part II</li>
+        <li>OverWatch</li>
+      </ul>
+    </div>
+  </div>
+</div>
             <div>
           </div>
         </aside>

@@ -1,38 +1,70 @@
-<body>
-  <section>
-    <header>
-      <section class="container">
-        <img src="icons/logo_blue.png" href="index.html" class="logo item" alt="GameHub Logo" />
-        <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-        <div class="wider_item"></div>
-        <form action="search.html"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
-          <a href="search.html"><button><i class="fas fa-2x fa-search"></button></a>
-        <div class="item">
-          <a href="signup.html" class="signup">Sign up</a>
-          <p></p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GameHub - Where you get your games" />
+    <title>GameHub - the Universe of Games</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section>
+      <header>
+        <section class="container">
+          <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
+          <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
+          <div class="wider_item">          </div>
+          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
+          <div class="item">
+          <a href="signup.html" class="signup">Sign up</a><p></p>
           <a href="login.html">already a user? login</a>
         </div>
-      </section>
-      <nav>
-        <div class="menu_container">
-          <ul class="nav_main">
-            <list><a href="index.html" class="vertical_line active">Home</a></list>
-            <list><a href="newgames.html" class="vertical_line">New Games</a></list>
-            <list><a href="usedgames.html" class="vertical_line">Used Games</a></list>
-            <list><a href="community.html" class="vertical_line">Community</a></list>
-            <list><a href="contact.html" class="vertical_line">Contact</a></list>
-          </ul>
-          <ul class="nav_checkout">
-            <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
-            <list
-              ><a href="checkout.html"
-                ><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a
-            ></list>
-          </ul>
-        </div>
-      </nav>
+        </section>
+        <nav>
+          <div class="menu_container">
+            <ul class="nav_main">
+              <list><a href="index.html" class="vertical_line active">Home</a></list>
+              <list><a href="newgames.html" class="vertical_line">New Games</a></list>
+              <list><a href="usedgames.html" class="vertical_line">Used Games</a></list>
+              <list><a href="community.html" class="vertical_line">Community</a></list>
+              <list><a href="contact.html" class="vertical_line">Contact</a></list>
+            </ul>
+            <ul class="nav_checkout">
+              <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
+              <list><a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom"/></a></list>
+            </ul>
+          </div>
+        </nav>
     </header>
   </section>
+  <main>
+    <div class="form">
+      <h1>Create account</h1>
+      <p>Create your account to keep all your games in one place. You can also use this account to sell your used games or purchase games from fellow players.</p>
+    </div>
+    <div>
+      <form action="signup-success.php" method="POST" class="form">
+        <fieldset>
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="fullname" placeholder="your name" class="form_ _input" required>
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" placeholder="your email" class="form_ _input" required>
+          <label for="password">Create a password</label>
+          <input type="text" name="password" id="password" placeholder="create password" class="form_ _input" required>
+          <label for="password">Repeat password</label>
+          <input type="text" name="password" id="password" placeholder="repeat password" class="form_ _input" required>
+          <label for="birthday">Your birthday</label>
+          <input type="text" name="birthday" id="birthday" placeholder="your name" class="form_ _input" required>
+          <input type="submit" id="create" value="create account">
+        </fieldset>
+      </form>
+    </div> 
+    <div class="form">
+      <a href="login.html"><p>Already have an account? Login</p></a>
+    </div>
+  </main>
   <footer>
     <div class="footer_container">
       <ul class="footer_main">

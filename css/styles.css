@@ -103,9 +103,13 @@ button {
   border: 2px solid #aaccff;
 }
 
+.orange {
+  color: #f29727;
+}
 /* Main Menu */
 nav a {
   color: #fff;
+  font-weight: bold;
 }
 
 .menu_container {
@@ -208,43 +212,60 @@ aside {
 .dots {
   display: flex;
   justify-content: center;
-  margin: 10px 0 30px; 
+  margin: 10px 0 30px;
   gap: 10px;
 }
 
 .arrow {
-padding-top: 100px;
+  padding-top: 100px;
 }
 
 /* Shopping */
-.buy {
-  border-radius: 20px;
-  background-color: #f29727;
+
+.cart {
+  position: fixed;
+  top: 190px;
+  right: 10px;
+  border: 2px solid #f29727;
+  padding: 10px;
+  background: #fff;
+  margin: 10px;
+}
+.cart img {
+  display: inline-block;
+}
+
+label {
+  background: #f29727;
   color: #fff;
-  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
   text-transform: lowercase;
-  text-align: left;
-  padding: 10px 20px;
   box-shadow: 2px 1px 1px 1px grey;
 }
 
-.buy:hover {
+label:hover {
+  cursor: pointer;
+  color: #f29727;
   background-color: #fff;
-  background-image: #f29727;
   border: 2px solid #f29727;
 }
 
+#add-to-cart,
+.cart {
+  display: none;
+}
+
+#add-to-cart:checked ~ .cart {
+  display: block;
+}
+
 .add_wishlist {
-  border-radius: 50px;
-  background-color: #fff;
-  padding: 20px 10px 5px;
-  margin-left: 10px;
-  box-shadow: 2px 1px 1px 1px grey;
+  margin-left: 20px;
 }
 
 .add_wishlist:hover {
-  background-color: #fff;
-  border: 2px solid #698ebf;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -252,7 +273,9 @@ padding-top: 100px;
 .footer_container {
   display: flex;
   background-color: #6e6d6d;
+  margin-top: 80px;
 }
+
 .footer_main {
   flex: 6;
   padding: 10px;
@@ -267,7 +290,6 @@ padding-top: 100px;
   font-size: 1.1em;
   text-align: right;
 }
-
 
 .copyright {
   color: #698ebf;
@@ -293,7 +315,7 @@ padding-top: 100px;
 }
 
 .top_featured_arrow {
-margin: 200px 50px 0 100px;
+  margin: 200px 50px 0 100px;
 }
 
 .top_featured h2 {
@@ -342,9 +364,7 @@ margin: 200px 50px 0 100px;
 }
 
 .recommended_buttons {
-  
 }
-
 /* New Games */
 .popular {
   display: flex;
@@ -353,7 +373,7 @@ margin: 200px 50px 0 100px;
   text-align: center;
 }
 .popular_left {
-  flex:1;
+  flex: 1;
 }
 .popular_center {
   flex: 2;
@@ -362,7 +382,6 @@ margin: 200px 50px 0 100px;
 .popular_right {
   flex: 1;
 }
-
 
 .gamespage_wrapper {
   display: grid;
@@ -374,19 +393,121 @@ margin: 200px 50px 0 100px;
   text-align: center;
 }
 .seemore {
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
-    font-size: 1.5em;
-    text-transform: lowercase;
-    text-align: center;
-    padding: 10px 20px;
-    box-shadow: 2px 1px 1px 1px grey;
-  }
-  
-  .seemore:hover {
-    background-color: lightgrey;
-    color: #fff;
-    border: 2px solid lightgrey;
-  }
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 10px 20px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.seemore:hover {
+  background-color: lightgrey;
+  color: #fff;
+  border: 2px solid lightgrey;
+}
+
+/* Sign Up Page */
+
+.form {
+  display: block;
+  margin: 10px 600px 50px;
+  text-align: center;
+}
+
+label [for="fullname"],
+[for="email"],
+[for="password"],
+[for="birthday"] {
+  background: #fff;
+  border: none;
+  color: #000;
+  text-transform: none;
+  box-shadow: none;
+  display: block;
+  text-align: left;
+}
+label [for="create"],
+[for="forgot-password"] {
+  background: green;
+  color: #fff;
+  text-transform: none;
+}
+
+/* Login Page */
+.forgot {
+  position: fixed;
+  top: 350px;
+  right: 300px;
+  border: 2px solid green;
+  padding: 10px;
+  background: #fff;
+  margin: 10px;
+}
+
+#forgot-password,
+.forgot {
+  display: none;
+}
+
+#forgot-password:checked ~ .forgot {
+  display: block;
+}
+
+/* Account Page */
+label [for="profile"] {
+  background: #698ebf;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+.profile-menu {
+  position: fixed;
+  top: 350px;
+  right: 300px;
+  padding: 10px;
+  background: #698ebf;
+  margin: 10px;
+}
+#profile,
+.profile-menu {
+  display: none;
+}
+
+#profile:checked ~ .profile-menu {
+  display: block;
+}
+
+.gifted {
+  text-align: center;
+}
+
+.wishlist {
+  border-radius: 20px;
+  background-color: #698ebf;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.gift-gamer {
+  border-radius: 20px;
+  background-color: #aaccff;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.invite {
+  border-radius: 20px;
+  background-color: #43db64;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
 }

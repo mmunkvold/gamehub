@@ -11,11 +11,11 @@
     <section>
       <header>
         <section class="container">
-          <img src="icons/logo_blue.png" href="index.html" class="logo item" alt="GameHub Logo" />
+          <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
           <div class="wider_item"></div>
-          <form action="search.html"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
-          <a href="search.html"><button><i class="fas fa-2x fa-search"></button></a>
+          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
             <a href="signup.html" class="signup">Sign up</a>
             <p></p>
@@ -42,6 +42,84 @@
         </nav>
       </header>
     </section>
+    <main>
+      <h1>Search results</h1>
+      <p class="orange">Your search ## has ## matches. You can narrow down your search by using "sort by"</p>
+      <div class="gamespage_wrapper">
+        <div class="game_item">
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
+         
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>
+          
+          
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/robotwar.jpg" alt="Robot War" />
+          <h3>Robot War</h3>
+                       
+          
+         </div>
+         <div class="game_item">
+          <a href="productpage.html"><img src="gamecovers/notatoy.jpg" alt="Not A Toy" />
+          <h3>Not A Toy</h3>
+          
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/theminotaur.jpg" alt="The Minotaur" />
+          <h3>The Minotaur</h3>
+          
+        </div>
+        <div class="game_item">
+          
+          <h3>Sort by form here</h3>
+          
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/whereareyou.jpg" alt="Where are you" />
+          <h3>Where Are You?</h3>
+          
+         </div>
+         <div class="game_item">
+          <a href="productpage.html"><img src="gamecovers/ancientfighter.jpg" alt="Ancient Fighter" />
+          <h3>Ancient Fighter</h3>
+          
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/greensoldier.jpg" alt="Green Soldier" />
+          <h3>Green Soldier</h3>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div class="recommended">
+        <h3>Sort by</h3>
+        <form action="submit" method="post">
+          <fieldset>
+            <legend>Sort by</legend>
+            <input type="checkbox" name="newest" value="newest" id="newest"><label for= "newest">newest</label>
+            <input type="checkbox" name="price-up" value="price-up" id="price-up"><label for="price-up">price-up</label>
+            <input type="checkbox" name="price-down" value="price-down" id="price-down"><label for="price-down">price-down</label>
+            <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa"><label for="name-a-aa">name-a-aa</label>
+            <input type="checkbox" name="most-popular" value="most-popular" id="most-popular"><label for="most-popular">most-popular</label>
+            <input type="checkbox" name="categories" value="categories" id="categories"><label for="categories">categories</label>
+            <input type="checkbox" name="developer" value="developer" id="developer"><label for="developer">developer</label>
+            <input type="checkbox" name="OS" value="OS" id="OS"><label for="OS">OS</label>
+            <input type="checkbox" name="newgames" value="newgames" id="newgames"><label for="newgames">newgames</label>
+            <input type="checkbox" name="usedgames" value="usedgames" id="usedgames"><label for="usedgames">usedgames</label>
+
+          </fieldset>
+        </form>
+      </div>
+    </aside>
+        <section>
+          <p></p>
+          <div class="seemore_wrapper"><a href="#" class="seemore">see more &hellip;</a></div>
+        </section>
+    </main>
     <footer>
       <div class="footer_container">
         <ul class="footer_main">
