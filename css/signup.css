@@ -1,37 +1,88 @@
-.form {
-  display: block;
-  margin: 10px 600px 50px;
+h1,
+p {
   text-align: center;
 }
 
-label [for="fullname"],
+form {
+  margin: 0 auto 50px;
+  max-width: 450px;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 20px 0px;
+  padding: 10px;
+}
+
+label {
+  margin: 10px 20px 30px 40px;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 10px;
+}
+
+label[for="full_name"],
 [for="email"],
 [for="password"],
 [for="birthday"] {
   background: #fff;
-  border: none;
   color: #000;
   text-transform: none;
   box-shadow: none;
-  display: block;
-  text-align: left;
+  margin: 0;
+  padding: 5px;
 }
-label [for="create"],
-[for="forgot-password"] {
-  background: green;
+
+input[type="submit"] {
+  background: #43db64;
   color: #fff;
   text-transform: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+input:hover {
+  color: #43db64;
+  background-color: #fff;
+  border: 2px solid #43db64;
 }
 
 /* Login Page */
 .forgot {
-  position: fixed;
-  top: 350px;
-  right: 300px;
-  border: 2px solid green;
+  position: absolute;
+  top: 210px;
+  border: 2px solid #698ebf;
   padding: 10px;
   background: #fff;
-  margin: 10px;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+label[for="forgot-password"] {
+  background: #698ebf;
+  color: #fff;
+  text-transform: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin-left: 230px;
+}
+
+label:hover {
+  color: #698ebf;
+  background-color: #fff;
+  border: 2px solid #698ebf;
+}
+
+.nohover {
+  pointer-events: none;
 }
 
 #forgot-password,

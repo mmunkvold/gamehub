@@ -1,31 +1,57 @@
-.contact {
-  display: flex;
+.img {
+  float: left;
+  max-width: 100%;
+  padding: 30px 30px 0 0;
+  margin-left: 30px;
 }
 
-.column-left {
-  flex: 1;
-  margin: 50px 0 50px 100px;
+/* Contact Form */
+form {
+  margin: 0 auto 50px;
+  max-width: 450px;
 }
 
-.column-right {
-  flex: 2;
-  margin-top: 50px;
-  margin-right: 100px;
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
 }
 
-.contact_container {
-  display: flex;
+textarea {
+  height: 65%;
+  min-height: 100px;
 }
 
-.contact-column-left {
-  flex: 2;
-  margin-left: 40px;
+label[for="full_name"],
+[for="email"],
+[for="subject"],
+[for="message"] {
+  background: #fff;
+  color: #000;
+  text-transform: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 5px;
 }
 
-.contact-column-right {
-  flex: 1;
+input[type="submit"] {
+  background: #43db64;
+  color: #fff;
+  text-transform: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  pointer-events: cursor;
 }
 
-h1 {
-  padding-left: 40px;
+input:hover {
+  color: #43db64;
+  background-color: #fff;
+  border: 2px solid #43db64;
+}
+
+.nohover {
+  pointer-events: none;
 }

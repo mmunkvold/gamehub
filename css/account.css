@@ -13,6 +13,11 @@
   padding: 10px 0 0;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
 h2,
 h3 {
   text-align: center;
@@ -70,6 +75,7 @@ h3 {
   margin: 50px 200px;
   padding: 30px;
   border: 5px dotted #f29727;
+  text-align: center;
 }
 
 .wishlist {

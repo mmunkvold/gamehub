@@ -6,6 +6,7 @@
     <meta name="description" content="Search results GameHub" />
     <title>Search | GameHub</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/search.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -14,9 +15,9 @@
         <section class="container">
           <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <div class="wider_item"></div>
-          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <div class="wider_item"><form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
+          </div>
           <div class="item">
             <a href="signup.html" class="signup">Sign up</a>
             <p></p>
@@ -43,84 +44,87 @@
         </nav>
       </header>
     </section>
+    <section class="container">
     <main>
       <h1>Search results</h1>
       <p class="orange">Your search ## has ## matches. You can narrow down your search by using "sort by"</p>
-      <div class="gamespage_wrapper">
+      <section class="gamespage_wrapper">
         <div class="game_item">
           <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
           <h3>Skull Part II</h3>
-         
         </div>
         <div class="game_item">
           <img src="gamecovers/letherin.jpg" alt="Let Her In" />
-          <h3>Let Her In</h3>
-          
-          
+          <h3>Let Her In</h3>   
         </div>
         <div class="game_item">
-          <img src="gamecovers/robotwar.jpg" alt="Robot War" />
-          <h3>Robot War</h3>
-                       
-          
-         </div>
-         <div class="game_item">
-          <a href="productpage.html"><img src="gamecovers/notatoy.jpg" alt="Not A Toy" />
-          <h3>Not A Toy</h3>
-          
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
         </div>
         <div class="game_item">
-          <img src="gamecovers/theminotaur.jpg" alt="The Minotaur" />
-          <h3>The Minotaur</h3>
-          
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>   
         </div>
         <div class="game_item">
-          
-          <h3>Sort by form here</h3>
-          
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
         </div>
         <div class="game_item">
-          <img src="gamecovers/whereareyou.jpg" alt="Where are you" />
-          <h3>Where Are You?</h3>
-          
-         </div>
-         <div class="game_item">
-          <a href="productpage.html"><img src="gamecovers/ancientfighter.jpg" alt="Ancient Fighter" />
-          <h3>Ancient Fighter</h3>
-          
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>   
         </div>
         <div class="game_item">
-          <img src="gamecovers/greensoldier.jpg" alt="Green Soldier" />
-          <h3>Green Soldier</h3>
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
         </div>
-      </div>
+        <div class="game_item">
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>   
+        </div>
+        <div class="game_item">
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>   
+        </div>
+        <div class="game_item">
+          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+          <h3>Skull Part II</h3>
+        </div>
+        <div class="game_item">
+          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+          <h3>Let Her In</h3>   
+        </div>
+      </section>
+      <section>
+        <p></p>
+        <div class="seemore_wrapper"><a href="#" class="seemore">see more &hellip;</a></div>
+      </section>
     </main>
     <aside>
-      <div class="recommended">
+      <div class="sort_by">
         <h3>Sort by</h3>
         <form action="submit" method="post">
           <fieldset>
             <legend>Sort by</legend>
-            <input type="checkbox" name="newest" value="newest" id="newest"><label for= "newest">newest</label>
-            <input type="checkbox" name="price-up" value="price-up" id="price-up"><label for="price-up">price-up</label>
-            <input type="checkbox" name="price-down" value="price-down" id="price-down"><label for="price-down">price-down</label>
-            <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa"><label for="name-a-aa">name-a-aa</label>
-            <input type="checkbox" name="most-popular" value="most-popular" id="most-popular"><label for="most-popular">most-popular</label>
-            <input type="checkbox" name="categories" value="categories" id="categories"><label for="categories">categories</label>
-            <input type="checkbox" name="developer" value="developer" id="developer"><label for="developer">developer</label>
-            <input type="checkbox" name="OS" value="OS" id="OS"><label for="OS">OS</label>
-            <input type="checkbox" name="newgames" value="newgames" id="newgames"><label for="newgames">newgames</label>
-            <input type="checkbox" name="usedgames" value="usedgames" id="usedgames"><label for="usedgames">usedgames</label>
-
+            <input type="checkbox" name="newest" value="newest" id="newest" class="nohover"><label for= "newest" class="nohover">newest</label>
+            <input type="checkbox" name="price-up" value="price-up" id="price-up"><label for="price-up" class="nohover">price-up</label>
+            <input type="checkbox" name="price-down" value="price-down" id="price-down"><label for="price-down" class="nohover">price-down</label>
+            <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa"><label for="name-a-aa" class="nohover">name-a-aa</label>
+            <input type="checkbox" name="most-popular" value="most-popular" id="most-popular"><label for="most-popular" class="nohover">most-popular</label>
+            <input type="checkbox" name="category" value="category" id="category"><label for="category" class="nohover">category</label>
+            <input type="checkbox" name="developer" value="developer" id="developer"><label for="developer" class="nohover">developer</label>
+            <input type="checkbox" name="os" value="os" id="os"><label for="os">OS</label>
+            <input type="checkbox" name="newgames" value="newgames" id="newgames"><label for="newgames" class="nohover">newgames</label>
+            <input type="checkbox" name="usedgames" value="usedgames" id="usedgames"><label for="usedgames" class="nohover">usedgames</label>
+            <input type="submit" name="submit" value="send" id="submit">
           </fieldset>
         </form>
       </div>
     </aside>
-        <section>
-          <p></p>
-          <div class="seemore_wrapper"><a href="#" class="seemore">see more &hellip;</a></div>
-        </section>
-    </main>
+  </section>    
     <footer>
       <div class="footer_container">
         <ul class="footer_main">
@@ -132,7 +136,7 @@
           <list><a href="contact.html" class="vertical_line">contact</a></list>
         </ul>
         <ul class="footer_social">
-          <list><i class="vertical_line fab fa-2x fa-facebook zoom"></i></list>
+          <list><i class="fab fa-2x fa-facebook zoom"></i></list>
           <list><i class="fab fa-2x fa-discord zoom"></i></list>
         </ul>
       </div>
