@@ -1,0 +1,40 @@
+.success-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+h2 {
+  color: #fff;
+}
+
+.go-game {
+  border-radius: 20px;
+  background-color: #43db64;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.column-1 {
+  margin-bottom: 20px 0 50px;
+}
+
+.column-2 {
+  background-image: url("/gamecovers/skullpartII_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 650px;
+  height: 400px;
+  margin-bottom: 80px;
+}
+
+.column-3 {
+  background-image: url("/gamecovers/overwatch_large.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 650px;
+  height: 400px;
+}

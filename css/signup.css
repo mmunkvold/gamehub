@@ -1,0 +1,44 @@
+.form {
+  display: block;
+  margin: 10px 600px 50px;
+  text-align: center;
+}
+
+label [for="fullname"],
+[for="email"],
+[for="password"],
+[for="birthday"] {
+  background: #fff;
+  border: none;
+  color: #000;
+  text-transform: none;
+  box-shadow: none;
+  display: block;
+  text-align: left;
+}
+label [for="create"],
+[for="forgot-password"] {
+  background: green;
+  color: #fff;
+  text-transform: none;
+}
+
+/* Login Page */
+.forgot {
+  position: fixed;
+  top: 350px;
+  right: 300px;
+  border: 2px solid green;
+  padding: 10px;
+  background: #fff;
+  margin: 10px;
+}
+
+#forgot-password,
+.forgot {
+  display: none;
+}
+
+#forgot-password:checked ~ .forgot {
+  display: block;
+}

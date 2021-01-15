@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GameHub - Where you get your games" />
-    <title>GameHub - the Universe of Games</title>
+    <meta name="description" content="Your GameHub Account Page" />
+    <title>Your Account | GameHub </title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/account.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -18,17 +19,8 @@
           <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
-            
             <p style="font-style: italic; font-size: 0.8em;">you are logged in as</p>
-            <label for="profile">Sean</label>
-<input type="checkbox" id="profile">
-          </div>
-          <div class="profile-menu"> <h3>Your Profile</h3>
-                <ul>
-                  <li>my profile</li>
-                  <li>my games</li>
-                </ul>
-              </div>
+            <p class="profile">Monica</p>
             </div>
           </div>
         </section>
@@ -47,45 +39,75 @@
             </ul>
           </div>
         </nav>
-       <main>
-         <h1>Hi there Sean!</h1>
-         <section><h3>What do you want to do today?</h3>
-          <div class="container">
-            <div class="column-left item">
-              <img src="icons/control_lightblue_large.png"><p>play a game</p>
+        </header>
+       <main> 
+         <section class="profile_menu">
+          <ul class="profile_menu-items"></ul>
+            <list><a href="#" class="vertical_line active">My profile</a></list>
+            <list><a href="#" class="vertical_line">My games</a></list>
+            <list><a href="#" class="vertical_line">My wishlist</a></list>
+            <list><a href="#" class="vertical_line">Gift a fellow gamer</a></list>
+            <list><a href="community.html" class="vertical_line">Go to community</a></list>
+            <list><a href="#" class="vertical_line">My salespage</a></list>
+          </ul>
+         </section>
+         <section>
+           <h2>Hi there Monica!</h2>
+           <h3>What do you want to do today?</h3>
+           <section class="todo-container">
+            <div class="column-1">
+              <p>.</p>
+              <a href="#" class="go-do">play a game?</a>
+              <p>.</p>
             </div>
-            <div class="column-center item">
-              <img src="icons/control_lightblue_large.png"><p>buy/sell a game</p>
+            <div class="column-2">
+              <p>.</p>
+              <a href="#" class="go-do">buy or sell a game?</a>
+              <p>.</p>
             </div>
-            <div class="column-right item">
-              <img src="icons/control_lightblue_large.png"><p>go to community</p>
+            <div class="column-3">
+              <p>.</p>
+              <a href="#" class="go-do">go to community</a>
+              <p>.</p>
             </div>
+          </section>
           </div>
         </section>  
         <section class="gifted">
-          <h3>YOU'VE BEEN GIFTET 3000 COINS!</h3>
+          <h3>YOU'VE BEEN GIFTED!</h3>
           <p>One of your fellow gamers <span class="orange">Yoto</span>, has gifted you <span class="orange">3000 coins </span> in <strong>Haiko!</strong></p>
           <p>Go to game to collect this gift and say <strong>THANK YOU!</strong></p>
         </section>
         <section>
           <h2>Did you know?</h2>
-          <h3>Send your wishlist</h3>
-          <p>After you have created your wishilist you can send it to whomever 
-            wants to buy you a present. So the next time your mother wonders what to
-            get you, or for your birthday, you can send this list by e-mail to your friends
-            and family. Click the button to send Your saved wishlist.</p>
-          <a href="#" class="wishlist">send my wishlist</a>
-          <h3>Gift a fellow gamer</h3>
-          <p>You can gift a fellow gamer from within your games. Several games has the 
-            option to gift someone you play together with, or someone else you know plays
-            the same game as you. Click the button on the right to read more and start 
-            gifting your fellow gamers!</p>
-          <a href="#" class="gift-gamer">gift a fellow gamer</a>
-          <h3>Invite FRIENDS and EARN GAME COINS</h3>
-          <p>Invite your friends to join GameHub and you can earn coins or extra Equipment
-          in a game of your choice. Click the button and invite your friends.
-          When they have created their accounts, you get paid. </p>
-          <a href="#" class="invite">invite a friend</a>
+          <div class="wrapper">
+            <div class="wrapper_item">
+              <h3>Send your wishlist</h3>
+              <p>After you have created your wishilist you can send it to whomever 
+              wants to buy you a present. So the next time your mother wonders what to
+              get you, or for your birthday, you can send this list by e-mail to your friends
+              and family. Click the button to send your saved wishlist.</p>
+              <p></p>
+              <a href="#" class="wishlist">send my wishlist</a>
+            </div>
+            <div class="wrapper_item">
+              <h3>Gift a fellow gamer</h3>
+              <p>You can gift a fellow gamer from within your games. Several games has the 
+              option to gift someone you play together with, or someone else you know plays
+              the same game as you. Click the button on the right to read more and start 
+              gifting your fellow gamers!</p>
+              <p></p>
+              <a href="#" class="gift-gamer">gift a fellow gamer</a>
+            </div>
+            <div class="wrapper_item">
+              <h3>Invite friends</h3>
+              <p>Invite your friends to join GameHub and you can <strong>earn coins</strong> or <strong>extra equipment</strong>
+              in a game of your choice. Click the button and invite your friends.
+              As soon as they have created their accounts, you get paid. </p>
+              <p></p>
+              <a href="#" class="invite">invite a friend</a>
+            </div>
+          </div>
         </section>
        </main>
       <footer>

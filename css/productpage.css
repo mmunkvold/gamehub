@@ -1,0 +1,39 @@
+.top {
+  background-color: #aaccff;
+  color: #fff;
+  display: flex;
+  padding: 0 300px 0 20px;
+}
+
+.top_game {
+  padding: 20px 30px 20px 0;
+  margin-left: 10px;
+}
+
+.top_buttons {
+  padding: 20px 30px 20px 0;
+  margin-left: 20px;
+}
+
+.top h1 {
+  padding: 60px 20px 0px 0px;
+  margin-top: 0;
+}
+
+.top p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.middle {
+  display: flex;
+  padding: 0 20px 0 30px;
+}
+
+.middle_game {
+  padding: 50px 0 50px 50px;
+  margin-right: 50px;
+}
+h2 {
+  padding-left: 40px;
+}

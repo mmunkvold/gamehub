@@ -190,36 +190,6 @@ a:hover {
   font-size: 0.8em;
 }
 
-/* Main */
-main {
-  flex: 2;
-}
-
-aside {
-  flex: 1;
-}
-
-.vertical_line {
-  padding: 0px 20px;
-  border-right: 2px solid #fff;
-}
-
-.horizontal_line {
-  padding: 10px;
-  border-bottom: 2px solid #dddddd;
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0 30px;
-  gap: 10px;
-}
-
-.arrow {
-  padding-top: 100px;
-}
-
 /* Shopping */
 
 .cart {
@@ -296,76 +266,28 @@ label:hover {
   text-align: center;
 }
 
-/* Home Page */
-.top_featured {
-  background-color: #6e6d6d;
-  color: #fff;
-  display: flex;
-  padding-right: 40px;
+.vertical_line {
+  padding: 0px 20px;
+  border-right: 2px solid #fff;
 }
 
-.top_featured_game {
-  padding: 20px 30px 20px 0;
-  margin-left: 20px;
-}
-
-.top_featured_buttons {
-  padding: 20px 30px 20px 0;
-  margin-left: 20px;
-}
-
-.top_featured_arrow {
-  margin: 200px 50px 0 100px;
-}
-
-.top_featured h2 {
-  padding: 110px 20px 0px 0px;
-  margin-top: 0;
-}
-
-.games_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.game_item {
-  position: relative;
-  margin: 10px;
+.horizontal_line {
   padding: 10px;
-  text-align: center;
+  border-bottom: 2px solid #dddddd;
 }
 
-.new_games {
-  color: #bf4f36;
-  margin: 20px;
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+  gap: 10px;
 }
 
-.used_games {
-  color: #43db64;
-  margin: 20px;
-}
-/* Right Column Home Page */
-.recommended {
-  background-color: #dddddd;
-  box-shadow: 10px 5px 5px 5px grey;
-  margin: 10px 0px auto;
-  padding: 10px 30px 20px;
+.arrow {
+  padding-top: 100px;
 }
 
-.recommended img {
-  display: block;
-  margin: 0 auto;
-}
-
-.recommended h3 {
-  font-style: italic;
-  box-shadow: none;
-  text-align: center;
-}
-
-.recommended_buttons {
-}
-/* New Games */
+/* New Games Page */
 .popular {
   display: flex;
   padding: 10px;
@@ -407,107 +329,4 @@ label:hover {
   background-color: lightgrey;
   color: #fff;
   border: 2px solid lightgrey;
-}
-
-/* Sign Up Page */
-
-.form {
-  display: block;
-  margin: 10px 600px 50px;
-  text-align: center;
-}
-
-label [for="fullname"],
-[for="email"],
-[for="password"],
-[for="birthday"] {
-  background: #fff;
-  border: none;
-  color: #000;
-  text-transform: none;
-  box-shadow: none;
-  display: block;
-  text-align: left;
-}
-label [for="create"],
-[for="forgot-password"] {
-  background: green;
-  color: #fff;
-  text-transform: none;
-}
-
-/* Login Page */
-.forgot {
-  position: fixed;
-  top: 350px;
-  right: 300px;
-  border: 2px solid green;
-  padding: 10px;
-  background: #fff;
-  margin: 10px;
-}
-
-#forgot-password,
-.forgot {
-  display: none;
-}
-
-#forgot-password:checked ~ .forgot {
-  display: block;
-}
-
-/* Account Page */
-label [for="profile"] {
-  background: #698ebf;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-.profile-menu {
-  position: fixed;
-  top: 350px;
-  right: 300px;
-  padding: 10px;
-  background: #698ebf;
-  margin: 10px;
-}
-#profile,
-.profile-menu {
-  display: none;
-}
-
-#profile:checked ~ .profile-menu {
-  display: block;
-}
-
-.gifted {
-  text-align: center;
-}
-
-.wishlist {
-  border-radius: 20px;
-  background-color: #698ebf;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-
-.gift-gamer {
-  border-radius: 20px;
-  background-color: #aaccff;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-
-.invite {
-  border-radius: 20px;
-  background-color: #43db64;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
 }

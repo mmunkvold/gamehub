@@ -1,0 +1,113 @@
+.profile {
+  background-color: #43db64;
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px;
+  margin: auto;
+}
+
+.profile_menu {
+  display: flex;
+  background-color: #43db64;
+  color: #fff;
+  padding: 10px 0 0;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.todo-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 90px auto;
+  max-width: 1200px;
+  background-size: cover;
+  border-radius: 50px;
+  gap: 20px;
+}
+
+.go-do {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.column-1 {
+  flex: 1;
+  background-image: url("/images/keyboard1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.column-2 {
+  flex: 1;
+  background-image: url("/gamecovers/tetris.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.column-3 {
+  flex: 1;
+  background-image: url("/images/redshirtgamer2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.gifted {
+  margin: 50px 200px;
+  padding: 30px;
+  border: 5px dotted #f29727;
+}
+
+.wishlist {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #698ebf;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.gift-gamer {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #aaccff;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.invite {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #43db64;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 200px;
+  gap: 100px;
+}
