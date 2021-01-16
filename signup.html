@@ -15,11 +15,11 @@
         <section class="container">
           <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
           <a href="signup.html" class="signup">Sign up</a><p></p>
-          <a href="login.html">already a user? login</a>
+          <a href="login.html" class="login_link">already a user? login</a>
         </div>
         </section>
         <nav>
@@ -40,25 +40,28 @@
     </header>
   </section>
   <main>
-    <div class="form"><h1>Create account</h1>
+    <div class="form">
+      <h1>Create account</h1>
       <p>Keep all your games in one place.</p>
       <p>Buy or sell games.</p>
       </div>
-      <form action="#" method="POST">
-        <fieldset>
-          <label for="full_name" class="nohover">Your name:</label>
-          <input type="text" name="full_name" id="fullname" placeholder="your name" class="form__input" required>
-          <label for="email" class="nohover">Your email:</label>
-          <input type="email" name="email" id="email" placeholder="your email" class="form__input" required>
-          <label for="password" class="nohover">Create a password:</label>
-          <input type="text" name="password" id="password" placeholder="create password" class="form__input" required>
-          <label for="password" class="nohover">Repeat password:</label>
-          <input type="text" name="password" id="password" placeholder="repeat password" class="form__input" required>
-          <label for="birthday" class="nohover">Your birthday:</label>
-          <input type="text" name="birthday" id="birthday" placeholder="your name" class="form__input" required>
-          <input type="submit" id="create" value="create account">
-        </fieldset>
-      </form>
+      <div class="form-wrapper">
+        <form action="account.html" method="get">
+          <fieldset>
+            <label for="full_name" class="nohover">Your name:</label>
+            <input type="text" name="full_name" id="fullname" placeholder="your name" class="form__input" >
+            <label for="email" class="nohover">Your email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" class="form__input" >
+            <label for="password" class="nohover">Create a password:</label>
+            <input type="text" name="password" id="password" placeholder="create password" class="form__input" >
+            <label for="password" class="nohover">Repeat password:</label>
+            <input type="text" name="password" id="password" placeholder="repeat password" class="form__input" >
+            <label for="birthday" class="nohover">Your birthday:</label>
+            <input type="text" name="birthday" id="birthday" placeholder="your name" class="form__input" >
+            <input type="submit" id="create" value="create account">
+          </fieldset>
+        </form>
+      </div>
       <a href="login.html"><p>Already have an account? Login</p></a>
   </main>
   <footer>

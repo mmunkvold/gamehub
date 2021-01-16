@@ -104,8 +104,7 @@ button {
   color: #fff;
   font-size: 1.5em;
   text-transform: lowercase;
-  text-align: center;
-  margin-left: 50px;
+  margin-left: 150px;
   padding: 10px;
   box-shadow: 2px 1px 1px 1px grey;
 }
@@ -115,9 +114,18 @@ button {
   border: 2px solid #aaccff;
 }
 
+.login_link {
+  margin-left: 110px;
+}
+
 .orange {
   color: #f29727;
 }
+
+.nohover {
+  pointer-events: none;
+}
+
 /* Main Menu */
 nav a {
   color: #fff;
@@ -135,7 +143,7 @@ nav a {
 }
 
 .nav_main {
-  flex: 6;
+  flex: 4;
   background-color: #698ebf;
   padding: 10px;
   margin: 0;
@@ -261,7 +269,7 @@ footer a {
 .footer_container {
   display: flex;
   background-color: #6e6d6d;
-  margin-top: 80px;
+  margin-top: 0;
 }
 
 .footer_main {

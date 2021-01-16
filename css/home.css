@@ -18,7 +18,7 @@ aside {
 }
 
 .top_featured_image {
-  padding: 20px 30px 20px 0;
+  padding: 0 30px 20px 0;
   margin-left: 20px;
 }
 
@@ -32,8 +32,13 @@ aside {
 }
 
 .top_featured h2 {
+  color: #fff;
   padding: 110px 20px 0px 0px;
   margin-top: 0;
+}
+
+.top_featured p {
+  padding: 10px 20px 0px 0px;
 }
 
 .games_wrapper {

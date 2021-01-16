@@ -11,8 +11,8 @@
   grid-template-columns: 1fr 1fr;
   border: 1px solid #000;
   background-color: #ddd;
-  max-width: 1000px;
-  margin: auto;
+  max-width: 500px;
+  margin-left: 758px;
 }
 
 .game_item {
@@ -20,4 +20,74 @@
   margin: 10px;
   padding: 10px;
   text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.center_img {
+  display: block;
+  margin: 60px auto;
+  width: 50%;
+}
+
+form {
+  margin: 0 auto 50px;
+  max-width: 450px;
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 20px 0px;
+  padding: 10px;
+}
+
+label {
+  margin: 10px 20px 30px 40px;
+}
+
+fieldset {
+  margin: 10px;
+  padding: 10px;
+}
+
+label[for="full_name"],
+[for="email"],
+[for="password"],
+[for="birthday"] {
+  background: #fff;
+  color: #000;
+  text-transform: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  background: #43db64;
+  color: #fff;
+  text-transform: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+input[type="search"] {
+  margin: 10px auto;
+}
+
+input:hover {
+  color: #43db64;
+  background-color: #fff;
+  border: 2px solid #43db64;
+}
+
+.nohover {
+  pointer-events: none;
 }

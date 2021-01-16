@@ -15,11 +15,11 @@
         <section class="container">
           <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" class="nohover" ></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
           <a href="signup.html" class="signup">Sign up</a><p></p>
-          <a href="login.html">already a user? login</a>
+          <a href="login.html" class="login_link">already a user? login</a>
         </div>
         </section>
         <nav>
@@ -42,13 +42,13 @@
   <main>
     <div class="form">
       <h1>Login</h1>
-      <form action="#" method="POST">
+      <form action="account.html" method="get">
         <fieldset>
           <label for="email"class="nohover">Your email:</label>
           <input type="email" name="email" id="email" placeholder="your email" class="form__input nohover" >
           <label for="password" class="nohover">Password:</label>
           <input type="text" name="password" id="password" placeholder="create password" class="form__input" >
-        <a href="account.html"><input type="submit" id="login" value="login"></a>
+        <input type="submit" id="login" value="login">
         </fieldset>
       </form>
     </div>

@@ -15,7 +15,7 @@
         <section class="container">
           <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" id="site-search" name="search" aria-label="Search this site"></form>
+          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
             <p style="font-style: italic; font-size: 0.8em;">you are logged in as</p>
@@ -38,7 +38,7 @@
             </ul>
           </div>
         </nav>
-        </header>
+      </header>
        <main> 
          <section class="profile_menu">
           <ul class="profile_menu-items"></ul>
@@ -50,9 +50,9 @@
             <list><a href="#" class="vertical_line">My salespage</a></list>
           </ul>
          </section>
-         <section>
-           <h2>Hi there Monica!</h2>
-           <video class="center" width="550" height="" controls>
+         
+         <section class="background">
+           <video class="center video" width="450" height="" autoplay="autoplay">
             <source src="welcome.mp4" type="video/mp4">
             </video>
            <h3>What do you want to do today?</h3>
@@ -75,12 +75,14 @@
           </section>
           </div>
         </section>  
-        <section class="gifted">
-          <h3>YOU'VE BEEN GIFTED!</h3>
-          <p>One of your fellow gamers <span class="orange">Yoto</span>, has gifted you <span class="orange">3000 coins </span> in <strong>Haiko!</strong></p>
-          <p>Go to game to collect this gift and say <strong>THANK YOU!</strong></p>
+        <section class="background">
+          <div class="gifted">
+            <h3>YOU'VE BEEN GIFTED!</h3>
+            <p>One of your fellow gamers <span class="orange">Yoto</span>, has gifted you <span class="orange">3000 coins </span> in <strong>Haiko!</strong></p>
+            <p>Go to game to collect this gift and say <strong>THANK YOU!</strong></p>
+            </div>
         </section>
-        <section>
+        <section class="background">
           <h2>Did you know?</h2>
           <div class="wrapper">
             <div class="wrapper_item">
@@ -91,6 +93,7 @@
               and family. Click the button to send your saved wishlist.</p>
               <p></p>
               <a href="#" class="wishlist">send my wishlist</a>
+              <p></p>
             </div>
             <div class="wrapper_item">
               <h3>Gift a fellow gamer</h3>
@@ -110,6 +113,7 @@
               <a href="#" class="invite">invite a friend</a>
             </div>
           </div>
+        
         </section>
        </main>
       <footer>

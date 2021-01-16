@@ -1,6 +1,6 @@
 .top {
   background-color: #aaccff;
-  color: #fff;
+  color: #000;
   display: flex;
   padding: 0 300px 0 20px;
 }
@@ -20,6 +20,11 @@
   margin-top: 0;
 }
 
+.top h3,
+p {
+  padding: 0 20px 0px 0px;
+}
+
 .top p {
   font-size: 14px;
   font-style: italic;
@@ -30,10 +35,28 @@
   padding: 0 20px 0 30px;
 }
 
-.middle_game {
+.trailer {
   padding: 50px 0 50px 50px;
-  margin-right: 50px;
+  margin-top: 50px;
 }
+
 h2 {
   padding-left: 40px;
+}
+
+.games_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  gap: 20px;
+}
+.games_wrapper img {
+  max-width: 100%;
+}
+
+.game_item {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }

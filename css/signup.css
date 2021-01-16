@@ -5,7 +5,7 @@ p {
 
 form {
   margin: 0 auto 50px;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .form {
@@ -47,6 +47,11 @@ input[type="submit"] {
   text-transform: none;
   border-radius: 10px;
   font-size: 1.2em;
+  width: 150px;
+}
+
+input[type="search"] {
+  margin: 10px auto;
 }
 
 input:hover {

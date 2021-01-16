@@ -46,6 +46,10 @@ input[type="submit"] {
   pointer-events: cursor;
 }
 
+input[type="search"] {
+  margin: 10px auto;
+}
+
 input:hover {
   color: #43db64;
   background-color: #fff;

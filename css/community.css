@@ -1,0 +1,11 @@
+main {
+  background-color: black;
+  color: #aaccff;
+  padding-bottom: 1px;
+  text-align: center;
+}
+.background {
+  background-image: url("/images/keyboard2_large.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}

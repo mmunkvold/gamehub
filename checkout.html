@@ -15,22 +15,12 @@
         <section class="container">
           <a href="index.html"> <img src="icons/logo_blue.png" alt="GameHub Logo" /></a>
           <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="search.html" method="POST">
-            <input
-              type="search"
-              placeholder="Search this site &hellip;"
-              id="site-search"
-              name="search"
-              aria-label="Search this site"
-            />
-          </form>
-          <a href="search.html"
-            ><button><i class="fas fa-2x fa-search"></i></button
-          ></a>
+          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" class="nohover"></form>
+          <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
             <a href="signup.html" class="signup">Sign up</a>
             <p></p>
-            <a href="login.html">already a user? login</a>
+            <a href="login.html" class="login_link">already a user? login</a>
           </div>
         </section>
         <nav>
@@ -53,8 +43,10 @@
         </nav>
       </header>
       <main>
-        <h1>Checkout</h1>
+        <div class="center">
+          <h1>Checkout</h1>
         <h2 class="orange">YOUR ITEMS</h2>
+        </div>
         <div class="games_wrapper">
           <div class="game_item">
             <img src="gamecovers/skullpartII_mini.jpg" alt="Skull Part 2" />
@@ -129,10 +121,23 @@
           </div>
         </div>
         <section>
-          <img src="icons/checkout_process1.png">
-          <h2 class="orange">LOGIN OR CREATE YOUR ACCOUNT</h2>
-          <P>LOGIN FORM HERE</P>
-          <P>SIGN UP FORM HERE</P>
+          <img src="icons/checkout_process1.png" class="center_img">
+          <div class="center">
+              <h2 class="orange">LOGIN OR CREATE YOUR ACCOUNT</h2>     
+              <h1>Login</h1>
+            <div class="form">
+              <form action="account.html" method="get">
+                <fieldset>
+                  <label for="email"class="nohover">Your email:</label>
+                  <input type="email" name="email" id="email" placeholder="your email" class="form__input nohover" >
+                  <label for="password" class="nohover">Password:</label>
+                  <input type="text" name="password" id="password" placeholder="password" class="form__input nohover" >
+                <input type="submit" id="login" value="login">
+                </fieldset>
+              </form>
+            </div>
+            <a href="signup.html"><p>Don't have an account yet? Sign up</p></a>
+          </div>
         </section>
       </main>
       <footer>
