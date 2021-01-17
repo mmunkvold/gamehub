@@ -21,7 +21,6 @@ input {
   padding: 10px;
   box-shadow: 1px 1px 1px 1px grey;
   width: 300px;
-  pointer-events: none;
 }
 
 label {
@@ -44,8 +43,7 @@ label[for="full_name"],
   box-shadow: none;
   margin: 0;
   padding: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 input[type="submit"] {
@@ -59,14 +57,14 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-input[type="search"] {
-  margin: 10px auto;
-}
-
-input:hover {
+*/ input:hover {
   color: #43db64;
   background-color: #fff;
   border: 2px solid #43db64;
+}
+
+.nohover {
+  pointer-events: none;
 }
 
 /* Login Page */
@@ -93,10 +91,6 @@ label:hover {
   color: #698ebf;
   background-color: #fff;
   border: 2px solid #698ebf;
-}
-
-.nohover {
-  pointer-events: none;
 }
 
 #forgot-password,

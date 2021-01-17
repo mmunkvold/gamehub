@@ -1,3 +1,49 @@
+body {
+  background-color: #000;
+  color: #aaccff;
+  margin: 0;
+}
+
+.container_account {
+  display: flex;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.wider_item {
+  flex: 2;
+  margin: 10px;
+}
+
+.active_account {
+  font-weight: bold;
+  color: orangered;
+}
+
+.account {
+  background-color: #43db64;
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  width: 200px;
+}
+
+.account_menu {
+  display: flex;
+  background-color: #43db64;
+  color: #fff;
+}
+
+.nav_checkout_account {
+  padding: 0 10px 0 200px;
+}
+
 .success-container {
   display: flex;
   flex-direction: column;
@@ -37,4 +83,5 @@ h2 {
   background-position: center;
   width: 650px;
   height: 400px;
+  margin-bottom: 80px;
 }

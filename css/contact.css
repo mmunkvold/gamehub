@@ -46,13 +46,6 @@ label[for="full_name"],
     sans-serif;
 }
 
-input[type="text"],
-[type="email"],
-[type="subject"],
-[type="message"] {
-  pointer-events: none;
-}
-
 input[type="submit"] {
   background: #43db64;
   color: #fff;

@@ -4,6 +4,7 @@ body {
   background-color: white;
   margin: 0;
   color: #6e6d6d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 h1,
@@ -13,8 +14,6 @@ h2 {
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
   font-size: 1.12em;
 }
 
@@ -40,10 +39,10 @@ footer {
   background-color: #698ebf;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin-left: auto;
 }
+
 /* Header */
 .container {
   display: flex;
@@ -61,14 +60,12 @@ footer {
 }
 
 /* Search */
-
-input[type="search"] {
+#site-search {
   width: 300px;
   border-radius: 5px;
   height: 30px;
   margin-top: 10px;
   padding-left: 10px;
-  pointer-events: none;
 }
 
 button {
@@ -113,8 +110,7 @@ nav a {
   padding: 0;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .nav_main {
@@ -245,48 +241,4 @@ footer a {
 
 .arrow {
   padding-top: 100px;
-}
-
-/* New Games Page */
-.popular {
-  display: flex;
-  padding: 10px;
-  margin: 0 30px 50px 30px;
-  text-align: center;
-}
-.popular_left {
-  flex: 1;
-}
-.popular_center {
-  flex: 2;
-}
-
-.popular_right {
-  flex: 1;
-}
-
-.gamespage_wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 70px;
-}
-
-.seemore_wrapper {
-  text-align: center;
-}
-.seemore {
-  border-radius: 20px;
-  background-color: #fff;
-  color: #000;
-  font-size: 1.5em;
-  text-transform: lowercase;
-  text-align: center;
-  padding: 10px 20px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-
-.seemore:hover {
-  background-color: lightgrey;
-  color: #fff;
-  border: 2px solid lightgrey;
 }

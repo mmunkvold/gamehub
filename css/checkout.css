@@ -39,7 +39,6 @@ input {
   padding: 10px;
   box-shadow: 1px 1px 1px 1px grey;
   width: 300px;
-  pointer-events: none;
 }
 
 input:hover {

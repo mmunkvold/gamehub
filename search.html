@@ -7,56 +7,44 @@
     <title>Search | GameHub</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/search.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section>
-      <header>
-        <section class="container">
-          <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
-          <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-          <form action="/search.html" method="POST">
-            <input
-              type="search"
-              placeholder="Search this site &hellip;"
-              name="search"
-              id="site-search"
-            />
-          </form>
-          <a href="search.html"
-            ><button><i class="fas fa-2x fa-search"></i></button
-          ></a>
-          <div class="item">
-            <a href="signup.html" class="signup">Sign up</a>
-            <p></p>
-            <a href="login.html" class="login_link">already a user? login</a>
+    <header>
+      <section class="container">
+        <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+        <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
+        <form action="/search.html" method="GET">
+          <input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" />
+        </form>
+        <div class="item">
+          <a href="signup.html" class="signup">Sign up</a>
+          <p></p>
+          <a href="login.html" class="login_link">already a user? login</a>
+        </div>
+      </section>
+      <nav>
+        <div class="container-nav">
+          <div class="nav_main">
+            <a href="index.html" class="vertical_line active">Home</a>
+            <a href="#" class="vertical_line">New Games</a>
+            <a href="#" class="vertical_line">Used Games</a>
+            <a href="#" class="vertical_line">Community</a>
+            <a href="contact.html" class="vertical_line">Contact</a>
           </div>
-        </section>
-        <nav>
-          <div class="container-nav">
-            <ul class="nav_main">
-              <list><a href="index.html" class="vertical_line">Home</a></list>
-              <list><a href="#" class="vertical_line">New Games</a></list>
-              <list><a href="#" class="vertical_line">Used Games</a></list>
-              <list><a href="#" class="vertical_line">Community</a></list>
-              <list><a href="contact.html" class="vertical_line">Contact</a></list>
-            </ul>
-            <ul class="nav_checkout">
-              <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
-              <list
-                ><a href="checkout.html"
-                  ><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a
-              ></list>
-            </ul>
+          <div class="nav_checkout">
+            <a href="checkout.html" class="vertical_line nav_checkout">Checkout</a>
+            <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a>
           </div>
-        </nav>
-      </header>
-    </section>
-    <section class="container">
+        </div>
+      </nav>
+    </header>
+    <div class="container">
       <main>
         <h1>Search results</h1>
         <p class="orange-text">
-          Your search ## has ## matches. You can narrow down your search by using "sort by".
+          Your search <strong>xxxx</strong> has <strong>##</strong> matches. You can narrow down your search by using "sort by".
         </p>
         <p></p>
         <section class="gamespage_wrapper">
@@ -118,78 +106,44 @@
       </main>
       <aside>
         <div class="sort_by">
-          <form action="submit" method="post">
+          <form action="search.html" method="get">
             <fieldset>
               <legend>Sort by</legend>
-              <input type="checkbox" name="newest" value="newest" id="newest" /><label
-                for="newest"
-                class="nohover"
-                >newest</label
+              <input type="checkbox" name="newest" value="newest" id="newest" /><label for="newest" class="nohover">newest</label>
+              <input type="checkbox" name="price-up" value="price-up" id="price-up" /><label for="price-up" class="nohover">price-up</label>
+              <input type="checkbox" name="price-down" value="price-down" id="price-down" /><label for="price-down" class="nohover">price-down</label>
+              <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa" /><label for="name-a-aa" class="nohover">name-a-aa</label>
+              <input type="checkbox" name="most-popular" value="most-popular" id="most-popular" /><label for="most-popular" class="nohover"
+                >most-popular</label
               >
-              <input type="checkbox" name="price-up" value="price-up" id="price-up" /><label
-                for="price-up"
-                class="nohover"
-                >price-up</label
-              >
-              <input type="checkbox" name="price-down" value="price-down" id="price-down" /><label
-                for="price-down"
-                class="nohover"
-                >price-down</label
-              >
-              <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa" /><label
-                for="name-a-aa"
-                class="nohover"
-                >name-a-aa</label
-              >
-              <input
-                type="checkbox"
-                name="most-popular"
-                value="most-popular"
-                id="most-popular"
-              /><label for="most-popular" class="nohover">most-popular</label>
-              <input type="checkbox" name="category" value="category" id="category" /><label
-                for="category"
-                class="nohover"
-                >category</label
-              >
-              <input type="checkbox" name="developer" value="developer" id="developer" /><label
-                for="developer"
-                class="nohover"
-                >developer</label
-              >
-              <input type="checkbox" name="os" value="os" id="os" /><label for="os">OS</label>
-              <input type="checkbox" name="newgames" value="newgames" id="newgames" /><label
-                for="newgames"
-                class="nohover"
-                >newgames</label
-              >
-              <input type="checkbox" name="usedgames" value="usedgames" id="usedgames" /><label
-                for="usedgames"
-                class="nohover"
-                >usedgames</label
-              >
-              <input type="submit" name="submit" value="sort" id="submit" />
+              <input type="checkbox" name="category" value="category" id="category" /><label for="category" class="nohover">category</label>
+              <input type="checkbox" name="developer" value="developer" id="developer" /><label for="developer" class="nohover">developer</label>
+
+              <input type="checkbox" name="newgames" value="newgames" id="newgames" /><label for="newgames" class="nohover">newgames</label>
+              <input type="checkbox" name="usedgames" value="usedgames" id="usedgames" /><label for="usedgames" class="nohover">usedgames</label>
+              <input type="checkbox" name="os" value="os" id="os" /><label for="os" class="nohover">OS</label>
+              <input type="submit" name="submit" value="sort by" id="sort" />
             </fieldset>
           </form>
         </div>
       </aside>
-    </section>
+    </div>
     <footer>
       <div class="footer_container">
-        <ul class="footer_main">
-          <list><a href="#" class="vertical_line">faq</a></list>
-          <list><a href="#" class="vertical_line">about GameHub</a></list>
-          <list><a href="#" class="vertical_line">privacy policy</a></list>
-          <list><a href="#" class="vertical_line">terms</a></list>
-          <list><a href="#" class="vertical_line">support</a></list>
-          <list><a href="contact.html" class="vertical_line">contact</a></list>
-        </ul>
-        <ul class="footer_social">
-          <list><i class="fab fa-2x fa-facebook zoom"></i></list>
-          <list><i class="fab fa-2x fa-discord zoom"></i></list>
-        </ul>
+        <div class="footer_main">
+          <a href="#" class="vertical_line">faq</a>
+          <a href="#" class="vertical_line">about GameHub</a>
+          <a href="#" class="vertical_line">privacy policy</a>
+          <a href="#" class="vertical_line">terms</a>
+          <a href="#" class="vertical_line">support</a>
+          <a href="contact.html" class="vertical_line">contact</a>
+        </div>
+        <div class="footer_social">
+          <i class="fab fa-2x fa-facebook zoom"></i>
+          <i class="fab fa-2x fa-discord zoom"></i>
+        </div>
       </div>
     </footer>
-    <a href="index.html"><p class="copyright">&copy; GameHub2020</p></a>
+    <a href="index.html"><p class="copyright">&copy; GameHub2021</p></a>
   </body>
 </html>
