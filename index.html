@@ -6,29 +6,30 @@
     <meta name="description" content="GameHub - Where you get your games" />
     <title>GameHub - the Universe of Games</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section>
-      <header>
-        <section class="container">
-          <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
-          <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
+    <a name="top"></a>
+    <header>
+      <section class="container">
+          <a href="index.html"> <img src="icons/logo.png"  alt="GameHub Logo"></a>
+          <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
           <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
             <a href="signup.html" class="signup">Sign up</a><p></p>
             <a href="login.html" class="login_link">already a user? login</a>    
           </div>
-        </section>
+      </section>
         <nav>
-          <div class="menu_container">
+          <div class="container-nav">
             <ul class="nav_main">
               <list><a href="index.html" class="vertical_line active">Home</a></list>
-              <list><a href="newgames.html" class="vertical_line">New Games</a></list>
-              <list><a href="usedgames.html" class="vertical_line">Used Games</a></list>
-              <list><a href="community.html" class="vertical_line">Community</a></list>
+              <list><a href="#" class="vertical_line">New Games</a></list>
+              <list><a href="#" class="vertical_line">Used Games</a></list>
+              <list><a href="#" class="vertical_line">Community</a></list>
               <list><a href="contact.html" class="vertical_line">Contact</a></list>
             </ul>
             <ul class="nav_checkout">
@@ -37,35 +38,32 @@
             </ul>
           </div>
         </nav>
-        <section class="top_featured">
-          <div class="column-left">
+      </header>
+      <main>
+        <section class="featured">
+          <div class="column-1">
             <h1>Newest Releases</h1>
-            <a href="productpage.html"><img src="gamecovers/skullpartII_large.jpg" alt="Skull Part 2" class="top_featured_image"/></a>
+            <a href="productpage.html"><img src="gamecovers/skullpartII_large.jpg" alt="Skull Part 2" class="featured_image"/></a>
              <div class="dots">
                <img src="icons/orange_dot.png">
               <img src="icons/white_dot.png">
             </div>
           </div>
-          <div class="column-center">
+          <div class="column-2">
             <a href="productpage.html"><h2>Skull Part II</h2></a>
             <p>You didn't do it right last time. If you did, he wouldn't still be here...</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, hic. Illum, ut, nam
             atque unde tenetur error, molestias exercitationem nesciunt possimus quae perferendis
-              adipisci nisi eaque ipsam ea. Sequi, necessitatibus!
-            </p>
-
-            <a href="#" class="readmore_featured">Read more...</a>    
+              adipisci nisi eaque ipsam ea. Sequi, necessitatibus!</p>
+            <a href="productpage.html" class="white-text">Read more...</a>    
             <p></p>          
             <label for="add-to-cart">Add to Cart</label>
             <a href="#" class="add_wishlist"><img src="icons/heart.png" class="zoom"></a>
           </div>
-          <a href="index2.html"><img src="icons/arrowwhite.png" class="top_featured_arrow zoom"></a>
-          </div>
         </section>
-      </header>
       <div class="container">
-        <main>          
-            <a href="newgames.html"><h2 class="new_games">New Games</h2></a>
+        <section class="main">         
+            <h2 class="new_games">New Games</h2>
             <div class="games_wrapper">
               <div class="game_item">
                 <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
@@ -90,12 +88,12 @@
                </div>
               <div class="game_item">
                 <div class="arrow">
-                <a href="newgames.html">see more<img src="icons/arrowgrey.png" class="zoom"></a>
+                <a href="newgames.html"><img src="icons/arrowgrey.png" class="zoom"></a>
                 </div>
               </div>
             </div>
           <div class="horizontal_line"></div>
-          <a href="usedgames.html"><h2 class="used_games">Used Games</h2></a>
+          <h2 class="used_games">Used Games</h2>
             <div class="games_wrapper">
               <div class="game_item">
               <img src="gamecovers/overwatch.jpg" alt="OverWatch" />
@@ -120,12 +118,12 @@
               <a href="#" class="add_wishlist "><img src="icons/heart.png" class="zoom"></a>
             </div>
             <div class="game_item">
-            <div class="arrow">
-              <a href="usedgames.html">see more<img src="icons/arrowgrey.png" class="zoom"></a>
-            </div>
+              <div class="arrow">
+                <a href="usedgames.html"><img src="icons/arrowgrey.png" class="zoom"></a>
+              </div>
             </div>
           </div>
-        </main>
+        </section>
         <aside>
           <div class="recommended">
             <h3>Recommended by user ##</h3>
@@ -135,7 +133,8 @@
             <p><strong>The Minotaur</strong></h3>
             <p>Soon someone is coming to see you. You don't know it's name. But you are familiar with it's myth &hellip;</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio maiores, optio quaerat unde voluptatem ullam ducimus blanditiis accusamus. Nemo eos odit maiores voluptates quis neque deserunt corporis ab quidem autem.</p>
-            <a href="#" class="readmore_featured">Read more &hellip;</a>
+            <p><em>"Lorem ipsum, dolor sit amet consectetur adipisicing elit! Enim fugit doloremque saepe eveniet vero velit quidem, inventore modi tenetur!"</em></p>
+            <a href="#" class="readmore">Read more &hellip;</a>
             <p></p> 
             <label for="add-to-cart">Add to Cart</label>
             <input type="checkbox" id="add-to-cart">
@@ -171,8 +170,6 @@
           </ul>
         </div>
       </footer>
-        <p class="copyright">&copy; GameHub2020</p>
-      
-    </section>
+      <a href="index.html"><p class="copyright">&copy; GameHub2020</p></a>
   </body>
 </html>

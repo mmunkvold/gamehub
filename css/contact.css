@@ -8,7 +8,11 @@
 /* Contact Form */
 form {
   margin: 0 auto 50px;
-  max-width: 450px;
+  max-width: 400px;
+}
+
+fieldset {
+  box-shadow: 1px 1px 1px 1px grey;
 }
 
 input,
@@ -18,11 +22,14 @@ textarea {
   border-radius: 5px;
   margin: 10px 10px 10px 0px;
   padding: 10px;
+  box-shadow: 1px 1px 1px 1px grey;
+  width: 300px;
 }
 
 textarea {
-  height: 65%;
   min-height: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
 
 label[for="full_name"],
@@ -35,6 +42,15 @@ label[for="full_name"],
   box-shadow: none;
   margin: 0;
   padding: 5px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+
+input[type="text"],
+[type="email"],
+[type="subject"],
+[type="message"] {
+  pointer-events: none;
 }
 
 input[type="submit"] {
@@ -43,6 +59,9 @@ input[type="submit"] {
   text-transform: none;
   border-radius: 10px;
   font-size: 1.2em;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
   pointer-events: cursor;
 }
 

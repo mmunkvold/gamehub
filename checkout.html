@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Checkout GameHub - Where you pay for your games" />
+    <meta name="description" content="Checkout Page GameHub" />
     <title>Checkout | GameHub</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/signup.css" rel="stylesheet" />
     <link href="css/checkout.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
   </head>
@@ -13,31 +14,27 @@
     <section>
       <header>
         <section class="container">
-          <a href="index.html"> <img src="icons/logo_blue.png" alt="GameHub Logo" /></a>
-          <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" class="nohover"></form>
+          <a href="index.html"> <img src="icons/logo.png"  alt="GameHub Logo"></a>
+          <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
+          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
           <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
           <div class="item">
-            <a href="signup.html" class="signup">Sign up</a>
-            <p></p>
-            <a href="login.html" class="login_link">already a user? login</a>
+            <a href="signup.html" class="signup">Sign up</a><p></p>
+            <a href="login.html" class="login_link">already a user? login</a>    
           </div>
-        </section>
+      </section>
         <nav>
-          <div class="menu_container">
+          <div class="container-nav">
             <ul class="nav_main">
-              <list><a href="index.html" class="vertical_line active">Home</a></list>
-              <list><a href="newgames.html" class="vertical_line">New Games</a></list>
-              <list><a href="usedgames.html" class="vertical_line">Used Games</a></list>
-              <list><a href="community.html" class="vertical_line">Community</a></list>
+              <list><a href="index.html" class="vertical_line">Home</a></list>
+              <list><a href="#" class="vertical_line">New Games</a></list>
+              <list><a href="#" class="vertical_line">Used Games</a></list>
+              <list><a href="#" class="vertical_line">Community</a></list>
               <list><a href="contact.html" class="vertical_line">Contact</a></list>
             </ul>
             <ul class="nav_checkout">
-              <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
-              <list
-                ><a href="checkout.html"
-                  ><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a
-              ></list>
+              <list><a href="checkout.html" class="vertical_line nav_checkout active">Checkout</a></list>
+              <list><a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom"/></a></list>
             </ul>
           </div>
         </nav>
@@ -45,14 +42,14 @@
       <main>
         <div class="center">
           <h1>Checkout</h1>
-        <h2 class="orange">YOUR ITEMS</h2>
+        <h2 class="orange-text">YOUR ITEMS</h2>
         </div>
         <div class="games_wrapper">
           <div class="game_item">
             <img src="gamecovers/skullpartII_mini.jpg" alt="Skull Part 2" />
           </div>
           <div class="game_item">
-            <h3>Skull Part II</h3>
+            <p>Skull Part II</p>
           </div>
           <div class="game_item">
             <p>1</p>
@@ -64,7 +61,7 @@
             <img src="gamecovers/overwatch_mini.jpg" alt="Skull Part 2" />
           </div>
           <div class="game_item">
-            <h3>OverWatch</h3>
+            <p>OverWatch</p>
           </div>
           <div class="game_item">
             <p>1</p>
@@ -88,29 +85,17 @@
             <p>662,-</p>
           </div>
           <div class="game_item">
-            <p>voucher?</p>
+            <p>Discount:</p>
           </div>
           <div class="game_item">
-            <h3>form for rabattkode her</h3>
-          </div>
-          <div class="game_item">
-            <p></p>
-          </div>
-          <div class="game_item">
-            <p>53,-</p>
-            </div>
-          <div class="game_item">
-            <p>gift?</p>
-          </div>
-          <div class="game_item">
-            <h3>form for gift her</h3>
+            <input type="text" name="discount" id="discount" placeholder="code here" class="form__input nohover" >
           </div>
           <div class="game_item">
             <p></p>
           </div>
           <div class="game_item">
-            <p></p>
-            </div>
+            <p>-53,-</p>
+          </div>
         </div>
         <div class="games_wrapper-total">
           <div class="game_item">
@@ -123,19 +108,20 @@
         <section>
           <img src="icons/checkout_process1.png" class="center_img">
           <div class="center">
-              <h2 class="orange">LOGIN OR CREATE YOUR ACCOUNT</h2>     
-              <h1>Login</h1>
-            <div class="form">
-              <form action="account.html" method="get">
-                <fieldset>
-                  <label for="email"class="nohover">Your email:</label>
-                  <input type="email" name="email" id="email" placeholder="your email" class="form__input nohover" >
-                  <label for="password" class="nohover">Password:</label>
-                  <input type="text" name="password" id="password" placeholder="password" class="form__input nohover" >
-                <input type="submit" id="login" value="login">
-                </fieldset>
-              </form>
-            </div>
+              <h3 class="orange-text">LOGIN OR CREATE YOUR ACCOUNT</h3>     
+              <h2>Login</h2>
+          </div>
+          <div class="form">
+            <form action="success2.html" method="get">
+              <fieldset>
+                <label for="email"class="nohover">Your email:</label>
+                <input type="email" name="email" id="email" placeholder="your email" class="form__input nohover" >
+                <label for="password" class="nohover">Password:</label>
+                <input type="text" name="password" id="password" placeholder="password" class="form__input nohover" >
+              <input type="submit" id="login" value="login">
+              </fieldset>
+            </form>
+          </div>
             <a href="signup.html"><p>Don't have an account yet? Sign up</p></a>
           </div>
         </section>
@@ -156,7 +142,7 @@
           </ul>
         </div>
       </footer>
-      <p class="copyright">&copy; GameHub2020</p>
+      <a href="index.html"><p class="copyright">&copy; GameHub2020</p></a>
     </section>
   </body>
 </html>

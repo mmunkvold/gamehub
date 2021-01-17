@@ -3,7 +3,8 @@
 }
 
 main {
-  flex: 4;
+  flex: 3;
+  text-align: center;
 }
 
 aside {
@@ -14,9 +15,13 @@ aside {
 .gamespage_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
   margin-left: 20px;
-  margin-bottom: 70px;
   gap: 10px;
+}
+
+.gamespage_wrapper p {
+  padding: 0;
 }
 
 .gamespage_wrapper img {
@@ -45,7 +50,6 @@ aside {
 
 /* Sort By */
 form {
-  margin-left: 70px;
   max-width: 230px;
 }
 

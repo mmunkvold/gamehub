@@ -1,3 +1,25 @@
+.featured {
+  background-color: #6e6d6d;
+  color: #fff;
+  display: flex;
+  padding-right: 40px;
+}
+
+.featured_image {
+  padding: 0 30px 20px 0;
+  margin-left: 20px;
+}
+
+.featured h2 {
+  color: #fff;
+  padding: 110px 20px 0px 0px;
+  margin-top: 0;
+}
+
+.featured p {
+  padding: 10px 20px 0px 0px;
+}
+
 .wrapper {
   display: flex;
 }
@@ -10,40 +32,9 @@ aside {
   flex: 1;
 }
 
-.top_featured {
-  background-color: #6e6d6d;
-  color: #fff;
-  display: flex;
-  padding-right: 40px;
-}
-
-.top_featured_image {
-  padding: 0 30px 20px 0;
-  margin-left: 20px;
-}
-
-.top_featured_buttons {
-  padding: 20px 30px 20px 0;
-  margin-left: 20px;
-}
-
-.top_featured_arrow {
-  margin: 200px 50px 0 100px;
-}
-
-.top_featured h2 {
-  color: #fff;
-  padding: 110px 20px 0px 0px;
-  margin-top: 0;
-}
-
-.top_featured p {
-  padding: 10px 20px 0px 0px;
-}
-
 .games_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .game_item {

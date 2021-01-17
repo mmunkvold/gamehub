@@ -1,34 +1,23 @@
-@import "imports/links.css";
-
-body {
-  background-color: white;
-  margin: 0;
-  color: #6e6d6d;
+@font-face {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
-
+/* Global */
 h1,
 h2 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-transform: uppercase;
+  transform: uppercase;
 }
 
 p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
-  font-size: 1.12em;
 }
 
-h1 {
-  font-size: 2.8em;
-  padding-left: 30px;
-}
-
-h2 {
-  font-size: 2.1em;
-}
-
-h3 {
-  font-size: 1.8em;
+body {
+  background-color: white;
+  margin: 0;
+  color: #6e6d6d;
 }
 
 .logo {
@@ -44,23 +33,27 @@ footer {
     sans-serif;
   margin-left: auto;
 }
+
 /* Header */
-.container {
+.container-logo {
   display: flex;
-  padding: 20px;
 }
 
 .item {
   flex: 1;
-  margin: 5px;
 }
 
 .wider_item {
   flex: 2;
-  margin: 30px;
 }
 
-/* Search */
+.slogan {
+  padding-left: 50px;
+  color: #6e6d6d;
+  font-size: 33px;
+  margin-top: 30px;
+  max-width: 900px;
+}
 
 input[type="search"] {
   width: 300px;
@@ -68,7 +61,6 @@ input[type="search"] {
   height: 30px;
   margin-top: 10px;
   padding-left: 10px;
-  pointer-events: none;
 }
 
 button {
@@ -79,7 +71,6 @@ button {
   margin-right: 40px;
 }
 
-/* Signup */
 .signup {
   border-radius: 15px;
   background-color: #aaccff;
@@ -100,14 +91,21 @@ button {
   margin-left: 110px;
 }
 
+.orange {
+  color: #f29727;
+}
+
+.nohover {
+  pointer-events: none;
+}
+
 /* Main Menu */
 nav a {
   color: #fff;
-  text-transform: uppercase;
   font-weight: bold;
 }
 
-.container-nav {
+.menu_container {
   display: flex;
   margin-bottom: 0;
   padding: 0;
@@ -143,7 +141,53 @@ nav a {
   padding: 2px 40px 0;
 }
 
+/* Links */
+.zoom {
+  transition: transform 0.1s;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  text-decoration: none;
+  color: #698ebf;
+}
+
+/*  
+a:visited {
+  color: #bf4f36;
+}
+*/
+a:hover {
+  color: #f29727;
+}
+
+.active {
+  font-weight: bold;
+  color: #43db64;
+}
+
+.readmore {
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 0.8em;
+}
+
+.readmore_featured {
+  color: #fff;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  font-size: 0.8em;
+}
+
 /* Shopping */
+
 .cart {
   position: fixed;
   top: 190px;
@@ -186,7 +230,12 @@ label:hover {
   margin-left: 20px;
 }
 
+.add_wishlist:hover {
+  cursor: pointer;
+}
+
 /* Footer */
+
 footer a {
   color: #fff;
 }
@@ -215,15 +264,6 @@ footer a {
 .copyright {
   color: #698ebf;
   text-align: center;
-}
-
-/* Other */
-.orange-text {
-  color: #f29727;
-}
-
-.white-text {
-  color: #fff;
 }
 
 .vertical_line {

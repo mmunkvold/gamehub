@@ -1,0 +1,162 @@
+body {
+  background-color: #000;
+  color: #aaccff;
+  margin: 0;
+}
+
+.container_account {
+  display: flex;
+  padding: 20px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.wider_item {
+  flex: 2;
+  margin: 10px;
+}
+
+.active_account {
+  font-weight: bold;
+  color: orangered;
+}
+
+.account {
+  background-color: #43db64;
+  border-radius: 15px;
+  color: #fff;
+  padding: 15px;
+  margin: auto;
+}
+
+.account_menu {
+  display: flex;
+  background-color: #43db64;
+  color: #fff;
+}
+
+.nav_checkout_account {
+  padding: 0 10px 0 200px;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+/* .video { 
+  border: 2px solid #fff;
+}
+*/
+.todo-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 90px auto 0;
+  max-width: 1200px;
+  background-size: cover;
+  border-radius: 50px;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.go-do {
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.column-1 {
+  flex: 1;
+  background-image: url("/images/keyboard1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.column-2 {
+  flex: 1;
+  background-image: url("/gamecovers/tetris.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.column-3 {
+  flex: 1;
+  background-image: url("/images/redshirtgamer2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.gifted {
+  margin: 0 20px 0;
+  padding: 30px 30px;
+  border: 5px dotted #f29727;
+  text-align: center;
+}
+
+.wishlist {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #698ebf;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.gift-gamer {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #aaccff;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.invite {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #43db64;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 15px;
+  box-shadow: 2px 1px 1px 1px grey;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 200px 0;
+  gap: 100px;
+  padding-bottom: 50px;
+}

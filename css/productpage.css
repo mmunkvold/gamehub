@@ -1,6 +1,5 @@
 .top {
   background-color: #aaccff;
-  color: #000;
   display: flex;
   padding: 0 300px 0 20px;
 }
@@ -30,9 +29,20 @@ p {
   font-style: italic;
 }
 
+.gamepics {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+  gap: 10px;
+}
+
 .middle {
   display: flex;
   padding: 0 20px 0 30px;
+}
+
+.middle h3 {
+  padding: 0;
 }
 
 .trailer {
@@ -47,9 +57,10 @@ h2 {
 .games_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   gap: 20px;
 }
+
 .games_wrapper img {
   max-width: 100%;
 }

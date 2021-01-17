@@ -13,10 +13,19 @@
     <section>
       <header>
         <section class="container">
-          <a href="index.html"> <img src="icons/logo_blue.png"  alt="GameHub Logo"></a>
-          <p class="slogan wider_item">BUY, PLAY and SELL GAMES!</p>
-          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
-          <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
+          <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+          <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
+          <form action="/search.html" method="POST">
+            <input
+              type="search"
+              placeholder="Search this site &hellip;"
+              name="search"
+              id="site-search"
+            />
+          </form>
+          <a href="search.html"
+            ><button><i class="fas fa-2x fa-search"></i></button
+          ></a>
           <div class="item">
             <a href="signup.html" class="signup">Sign up</a>
             <p></p>
@@ -24,47 +33,56 @@
           </div>
         </section>
         <nav>
-          <div class="menu_container">
-            <ul class="nav_main">
-              <list><a href="index.html" class="vertical_line active">Home</a></list>
-              <list><a href="newgames.html" class="vertical_line">New Games</a></list>
-              <list><a href="usedgames.html" class="vertical_line">Used Games</a></list>
-              <list><a href="community.html" class="vertical_line">Community</a></list>
-              <list><a href="contact.html" class="vertical_line">Contact</a></list>
+          <section class="account_menu">
+            <ul class="account_menu-items">
+              <list><a href="index.html" class="vertical_line">Back to GameHub</a></list>
+              <list><a href="#" class="vertical_line">My account</a></list>
+              <list><a href="#" class="vertical_line">My games</a></list>
+              <list><a href="#" class="vertical_line">My wishlist</a></list>
+              <list><a href="#" class="vertical_line">Gift a fellow gamer</a></list>
+              <list
+                ><a href="community.html" class="vertical_line active_account"
+                  >Go to community</a
+                ></list
+              >
+              <list><a href="#" class="vertical_line">My salespage</a></list>
             </ul>
-            <ul class="nav_checkout">
-              <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
-              <list><a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom"/></a></list>
+            <ul class="nav_checkout_account">
+              <list
+                ><a href="checkout.html"
+                  ><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a
+              ></list>
             </ul>
-          </div>
+          </section>
         </nav>
-        <main>
-          <h1>Welcome to GameHub Community!</h1>
-          <div class="background">
-            <p>This page is under construction.</p>
-            <p> The Community will be up and running some day in the not too far future..</p>
-            <p></p>
-            <p>Be sure to check back in now and then.</p>
-            <p></p>
-          </div>
-        </main>
-        <footer>
-          <div class="footer_container">
-            <ul class="footer_main">
-              <list><a href="#" class="vertical_line">faq</a></list>
-              <list><a href="#" class="vertical_line">about GameHub</a></list>
-              <list><a href="#" class="vertical_line">privacy policy</a></list>
-              <list><a href="#" class="vertical_line">terms</a></list>
-              <list><a href="#" class="vertical_line">support</a></list>
-              <list><a href="contact.html" class="vertical_line">contact</a></list>
-            </ul>
-            <ul class="footer_social">
-              <list><i class="fab fa-2x fa-facebook zoom"></i></list>
-              <list><i class="fab fa-2x fa-discord zoom"></i></list>
-            </ul>
-          </div>
-        </footer>
-          <p class="copyright">&copy; GameHub2020</p>
-        
-      </section></body>
+      </header>
+      <main>
+        <h1>Welcome to GameHub Community!</h1>
+        <div class="background">
+          <p>This page is under construction.</p>
+          <p>The Community will be up and running some day in the not too far future..</p>
+          <p></p>
+          <p>Be sure to check back in every now and then.</p>
+          <p></p>
+        </div>
+      </main>
+      <footer>
+        <div class="footer_container">
+          <ul class="footer_main">
+            <list><a href="#" class="vertical_line">faq</a></list>
+            <list><a href="#" class="vertical_line">about GameHub</a></list>
+            <list><a href="#" class="vertical_line">privacy policy</a></list>
+            <list><a href="#" class="vertical_line">terms</a></list>
+            <list><a href="#" class="vertical_line">support</a></list>
+            <list><a href="contact.html" class="vertical_line">contact</a></list>
+          </ul>
+          <ul class="footer_social">
+            <list><i class="fab fa-2x fa-facebook zoom"></i></list>
+            <list><i class="fab fa-2x fa-discord zoom"></i></list>
+          </ul>
+        </div>
+      </footer>
+      <a href="index.html"><p class="copyright">&copy; GameHub2020</p></a>
+    </section>
+  </body>
 </html>
