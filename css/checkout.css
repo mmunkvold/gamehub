@@ -32,8 +32,14 @@
   width: 50%;
 }
 
-input[type="search"] {
-  margin: 10px auto;
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 20px 0px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px grey;
+  width: 300px;
+  pointer-events: none;
 }
 
 input:hover {

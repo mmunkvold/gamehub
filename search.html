@@ -13,15 +13,25 @@
     <section>
       <header>
         <section class="container">
-          <a href="index.html"> <img src="icons/logo.png"  alt="GameHub Logo"></a>
+          <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
           <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-          <form action="/search.html" method="POST"><input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" ></form>
-          <a href="search.html"><button><i class="fas fa-2x fa-search"></i></button></a>
+          <form action="/search.html" method="POST">
+            <input
+              type="search"
+              placeholder="Search this site &hellip;"
+              name="search"
+              id="site-search"
+            />
+          </form>
+          <a href="search.html"
+            ><button><i class="fas fa-2x fa-search"></i></button
+          ></a>
           <div class="item">
-            <a href="signup.html" class="signup">Sign up</a><p></p>
-            <a href="login.html" class="login_link">already a user? login</a>    
+            <a href="signup.html" class="signup">Sign up</a>
+            <p></p>
+            <a href="login.html" class="login_link">already a user? login</a>
           </div>
-      </section>
+        </section>
         <nav>
           <div class="container-nav">
             <ul class="nav_main">
@@ -33,94 +43,137 @@
             </ul>
             <ul class="nav_checkout">
               <list><a href="checkout.html" class="vertical_line nav_checkout">Checkout</a></list>
-              <list><a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom"/></a></list>
+              <list
+                ><a href="checkout.html"
+                  ><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a
+              ></list>
             </ul>
           </div>
         </nav>
       </header>
     </section>
     <section class="container">
-    <main>
-      <h1>Search results</h1>
-      <p class="orange-text">Your search ## has ## matches. You can narrow down your search by using "sort by".</p>
-      <p></p>
-      <section class="gamespage_wrapper">
-        <div class="game_item">
-          <a href="productpage.html"><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
-          <p>Skull Part II</p></a>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/letherin.jpg" alt="Let Her In" />
-          <p>Let Her In</p>   
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/ancientfighter.jpg" alt="Ancient Fighter" />
-          <p>Ancient Fighter</p>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/bighorn.jpg" alt="Big Horn" />
-          <p>Big Horn</p>   
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/bluedragon.jpg" alt="Blue Dragon" />
-          <p>Blue Dragon</p>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/bonecracker.jpg" alt="Bone Cracker" />
-          <p>Bone Cracker</p>   
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/comeseehim.jpg" alt="Come See Him" />
-          <p>Come See Him</p>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/donkeykong.jpg" alt="Donkey Kong" />
-          <p>Donkey Kong</p>   
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/greensoldier.jpg" alt="Green Soldier" />
-          <p>Green Soldier</p>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/herskull.jpg" alt="Her Skull" />
-          <p>Her Skull</p>   
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/lordoftheskulls.jpg" alt="Lord of the Skulls" />
-          <p>Lord of the Skulls</p>
-        </div>
-        <div class="game_item">
-          <img src="gamecovers/notatoy.jpg" alt="Not a Toy" />
-          <p>Not a Toy</p>   
-        </div>
-      </section>
-      <section>
-        <div class="seemore_wrapper"><a href="#" class="seemore">see more &hellip;</a></div>
+      <main>
+        <h1>Search results</h1>
+        <p class="orange-text">
+          Your search ## has ## matches. You can narrow down your search by using "sort by".
+        </p>
         <p></p>
-      </section>
-    </main>
-    <aside>
-      <div class="sort_by">
-        <h3>Sort by</h3>
-        <form action="submit" method="post">
-          <fieldset>
-            <legend>Sort by</legend>
-            <input type="checkbox" name="newest" value="newest" id="newest" class="nohover"><label for= "newest" class="nohover">newest</label>
-            <input type="checkbox" name="price-up" value="price-up" id="price-up"><label for="price-up" class="nohover">price-up</label>
-            <input type="checkbox" name="price-down" value="price-down" id="price-down"><label for="price-down" class="nohover">price-down</label>
-            <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa"><label for="name-a-aa" class="nohover">name-a-aa</label>
-            <input type="checkbox" name="most-popular" value="most-popular" id="most-popular"><label for="most-popular" class="nohover">most-popular</label>
-            <input type="checkbox" name="category" value="category" id="category"><label for="category" class="nohover">category</label>
-            <input type="checkbox" name="developer" value="developer" id="developer"><label for="developer" class="nohover">developer</label>
-            <input type="checkbox" name="os" value="os" id="os"><label for="os">OS</label>
-            <input type="checkbox" name="newgames" value="newgames" id="newgames"><label for="newgames" class="nohover">newgames</label>
-            <input type="checkbox" name="usedgames" value="usedgames" id="usedgames"><label for="usedgames" class="nohover">usedgames</label>
-            <input type="submit" name="submit" value="send" id="submit">
-          </fieldset>
-        </form>
-      </div>
-    </aside>
-  </section>    
+        <section class="gamespage_wrapper">
+          <div class="game_item">
+            <a href="productpage.html"
+              ><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
+              <p>Skull Part II</p></a
+            >
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/letherin.jpg" alt="Let Her In" />
+            <p>Let Her In</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/ancientfighter.jpg" alt="Ancient Fighter" />
+            <p>Ancient Fighter</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/bighorn.jpg" alt="Big Horn" />
+            <p>Big Horn</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/bluedragon.jpg" alt="Blue Dragon" />
+            <p>Blue Dragon</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/bonecracker.jpg" alt="Bone Cracker" />
+            <p>Bone Cracker</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/comeseehim.jpg" alt="Come See Him" />
+            <p>Come See Him</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/donkeykong.jpg" alt="Donkey Kong" />
+            <p>Donkey Kong</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/greensoldier.jpg" alt="Green Soldier" />
+            <p>Green Soldier</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/herskull.jpg" alt="Her Skull" />
+            <p>Her Skull</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/lordoftheskulls.jpg" alt="Lord of the Skulls" />
+            <p>Lord of the Skulls</p>
+          </div>
+          <div class="game_item">
+            <img src="gamecovers/notatoy.jpg" alt="Not a Toy" />
+            <p>Not a Toy</p>
+          </div>
+        </section>
+        <section>
+          <div class="seemore_wrapper"><a href="#" class="seemore">see more &hellip;</a></div>
+          <p></p>
+        </section>
+      </main>
+      <aside>
+        <div class="sort_by">
+          <form action="submit" method="post">
+            <fieldset>
+              <legend>Sort by</legend>
+              <input type="checkbox" name="newest" value="newest" id="newest" /><label
+                for="newest"
+                class="nohover"
+                >newest</label
+              >
+              <input type="checkbox" name="price-up" value="price-up" id="price-up" /><label
+                for="price-up"
+                class="nohover"
+                >price-up</label
+              >
+              <input type="checkbox" name="price-down" value="price-down" id="price-down" /><label
+                for="price-down"
+                class="nohover"
+                >price-down</label
+              >
+              <input type="checkbox" name="name-a-aa" value="name-a-aa" id="name-a-aa" /><label
+                for="name-a-aa"
+                class="nohover"
+                >name-a-aa</label
+              >
+              <input
+                type="checkbox"
+                name="most-popular"
+                value="most-popular"
+                id="most-popular"
+              /><label for="most-popular" class="nohover">most-popular</label>
+              <input type="checkbox" name="category" value="category" id="category" /><label
+                for="category"
+                class="nohover"
+                >category</label
+              >
+              <input type="checkbox" name="developer" value="developer" id="developer" /><label
+                for="developer"
+                class="nohover"
+                >developer</label
+              >
+              <input type="checkbox" name="os" value="os" id="os" /><label for="os">OS</label>
+              <input type="checkbox" name="newgames" value="newgames" id="newgames" /><label
+                for="newgames"
+                class="nohover"
+                >newgames</label
+              >
+              <input type="checkbox" name="usedgames" value="usedgames" id="usedgames" /><label
+                for="usedgames"
+                class="nohover"
+                >usedgames</label
+              >
+              <input type="submit" name="submit" value="sort" id="submit" />
+            </fieldset>
+          </form>
+        </div>
+      </aside>
+    </section>
     <footer>
       <div class="footer_container">
         <ul class="footer_main">
@@ -138,6 +191,5 @@
       </div>
     </footer>
     <a href="index.html"><p class="copyright">&copy; GameHub2020</p></a>
-    </section>
   </body>
 </html>
