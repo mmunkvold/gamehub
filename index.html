@@ -9,179 +9,172 @@
     <link href="css/index.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://monicanikolaisen-gamehub.netlify.app/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2388834,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
   <body>
     <header>
-      <section class="container">
-        <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
-        <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-        <form action="/search.html" method="GET">
-          <input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" />
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="container">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <a class="logo" href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+        <h3 class="slogan wider-item">BUY, PLAY and SELL GAMES!</h3>
+        <form action="search.html" method="GET">
+          <input type="search" id="search" placeholder="search site" class="search-input" />
         </form>
-        <div class="item">
-          <a href="signup.html" class="signup">Sign up</a>
-          <p></p>
-          <a href="login.html" class="login_link">already a user? login</a>
-        </div>
-      </section>
+        <a href="search.html"><i class="fas fa-search"></i></a>
+      </div>
       <nav>
-        <div class="container-nav">
-          <div class="nav_main">
-            <a href="index.html" class="vertical_line active">Home</a>
-            <a href="#" class="vertical_line">New Games</a>
-            <a href="#" class="vertical_line">Used Games</a>
-            <a href="#" class="vertical_line">Community</a>
-            <a href="contact.html" class="vertical_line">Contact</a>
-          </div>
-          <div class="nav_checkout">
-            <a href="checkout.html" class="vertical_line nav_checkout">Checkout</a>
-            <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a>
-          </div>
+        <div class="nav-main">
+          <a href="index.html" class="vertical-line active">Home</a>
+          <a href="#" class="vertical-line">New Games</a>
+          <a href="#" class="vertical-line">Used Games</a>
+          <a href="#" class="vertical-line">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-signup">
+          <a href="signup.html">Login/Sign up</a>
+        </div>
+        <div class="nav-checkout">
+          <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="nav-checkout" /></a>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="featured">
-        <div class="column-1">
-          <h1>Newest Releases</h1>
-          <a href="productpage.html"><img src="gamecovers/skullpartII_large.jpg" alt="Skull Part 2" class="featured_image" /></a>
-          <div class="dots">
-            <img src="icons/orange_dot.png" alt="" />
-            <img src="icons/white_dot.png" alt="" />
-          </div>
-        </div>
-        <div class="column-2">
-          <a href="productpage.html"><h2>Skull Part II</h2></a>
-          <p>You didn't do it right last time. If you did, he wouldn't still be here...</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, hic. Illum, ut, nam atque unde tenetur error, molestias exercitationem
-            nesciunt possimus quae perferendis adipisci nisi eaque ipsam ea. Sequi, necessitatibus!
-          </p>
-          <a href="productpage.html" class="white-text">Read more...</a>
-          <p></p>
-          <label for="add-to-cart">Add to Cart</label>
-          <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
-        </div>
-      </section>
-      <section>
+    <section class="featured">
+      <div class="column-1">
+        <h1>Newest Release</h1>
+        <a href="productpage.html"><img src="gamecovers/skullpartII_large.jpg" alt="Skull Part 2" /></a>
+      </div>
+      <div class="column-2">
+        <a href="productpage.html"><h2>Skull Part II</h2></a>
+        <p>You didn't do it right last time. If you did, he wouldn't still be here...</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, hic. Illum, ut, nam atque unde tenetur error, molestias exercitationem
+          nesciunt possimus quae perferendis adipisci nisi eaque ipsam ea. Sequi, necessitatibus!
+        </p>
+        <a href="productpage.html" class="white-text">Read more...</a>
+        <p></p>
+        <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+        <a href="#" class="add-wishlist"><img src="icons/heart.png" alt=""  /></a>
+      </div>
+    </section>
+    <section class="body-wrapper">
+      <main>
         <div class="main">
-          <h2 class="new_games">New Games</h2>
-          <div class="games_wrapper">
-            <div class="game_item">
+          <h2 class="new-games">New Games</h2>
+          <div class="games-wrapper">
+            <div class="game-item">
               <a href="productpage.html"
                 ><img src="gamecovers/skullpartII.jpg" alt="Skull Part 2" />
                 <h3>Skull Part II</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></a
               >
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt=""  /></a>
             </div>
-            <div class="game_item">
+            <div class="game-item">
               <img src="gamecovers/letherin.jpg" alt="Let Her In" />
               <h3>Let Her In</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt=""  /></a>
             </div>
-            <div class="game_item">
+            <div class="game-item">
               <img src="gamecovers/robotwar.jpg" alt="Robot War" />
               <h3>Robot War</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt="" /></a>
             </div>
-            <div class="game_item">
-              <div class="arrow">
-                <a href="newgames.html"><img src="icons/arrowgrey.png" alt="" class="zoom" /></a>
-              </div>
+            <div class="game-item">
+                <a class="seemore" href="newgames.html">see more new games -></a>
             </div>
           </div>
-          <div class="horizontal_line"></div>
-          <h2 class="used_games">Used Games</h2>
-          <div class="games_wrapper">
-            <div class="game_item">
+          <div class="horizontal-line"></div>
+          <h2 class="used-games">Used Games</h2>
+          <div class="games-wrapper">
+            <div class="game-item">
               <img src="gamecovers/overwatch.jpg" alt="OverWatch" />
               <h3>OverWatch</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt="" class="more-games" /></a>
             </div>
-            <div class="game_item">
+            <div class="game-item">
               <img src="gamecovers/bluedragon.jpg" alt="Blue Dragon" />
               <h3>Blue Dragon</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt=""  /></a>
             </div>
-            <div class="game_item">
+            <div class="game-item">
               <img src="gamecovers/comeseehim.jpg" alt="Come See Him" />
               <h3>Come See Him</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <label for="add-to-cart">Add to Cart</label>
-              <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
+              <label for="add-to-cart" class="add-to-cart">Add to Cart</label>
+              <a href="#" class="add-wishlist"><img src="icons/heart.png" alt=""  /></a>
             </div>
-            <div class="game_item">
-              <div class="arrow">
-                <a href="usedgames.html"><img src="icons/arrowgrey.png" alt="" class="zoom" /></a>
+            <div class="game-item">
+              <a class="seemore" href="oldgames.html">see more old games -></a>
+          </div>
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="recommended">
+          <h4>Recommended by user ##</h4>
+          <img src="gamecovers/theminotaur.jpg" alt="The Minotaur" />
+          <p></p>
+          <img src="icons/controls.png" alt="" />
+          <h3>The Minotaur</h3></p>
+          <p>Soon someone is coming to see you. You don't know it's name. But you are familiar with it's myth &hellip;</p>
+          <p>
+            <em
+              >"Lorem ipsum, dolor sit amet consectetur adipisicing elit! Enim fugit doloremque saepe eveniet vero velit quidem, inventore modi
+              tenetur!"</em
+            >
+          </p>
+          <a href="#" class="readmore">Read more &hellip;</a>
+          
+          <div class="cart">
+            <h3>Your Shopping Cart</h3>
+            <div class="container">
+              <div class="column-left">
+                <img src="gamecovers/skullpartII_mini.jpg" alt="Skull Part 2" />
+                <img src="gamecovers/overwatch_mini.jpg" alt="OverWatch" />
+              </div>
+              <div class="column-right">
+                <ul>
+                  <li>Skull Part II</li>
+                  <li>OverWatch</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <aside>
-      <div class="recommended">
-        <h3>Recommended by user ##</h3>
-        <img src="gamecovers/theminotaur.jpg" alt="The Minotaur" />
-        <p></p>
-        <img src="icons/controls.png" alt="" />
-        <p><strong>The Minotaur</strong></p>
-        <p>Soon someone is coming to see you. You don't know it's name. But you are familiar with it's myth &hellip;</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio maiores, optio quaerat unde voluptatem ullam ducimus blanditiis accusamus.
-          Nemo eos odit maiores voluptates quis neque deserunt corporis ab quidem autem.
-        </p>
-        <p>
-          <em
-            >"Lorem ipsum, dolor sit amet consectetur adipisicing elit! Enim fugit doloremque saepe eveniet vero velit quidem, inventore modi
-            tenetur!"</em
-          >
-        </p>
-        <a href="#" class="readmore">Read more &hellip;</a>
-        <p></p>
-        <label for="add-to-cart">Add to Cart</label>
-        <input type="checkbox" id="add-to-cart" />
-        <a href="#" class="add_wishlist"><img src="icons/heart.png" alt="" class="zoom" /></a>
-        <div class="cart">
-          <h3>Your Shopping Cart</h3>
-          <div class="container">
-            <div class="column-left">
-              <img src="gamecovers/skullpartII_mini.jpg" alt="Skull Part 2" />
-              <img src="gamecovers/overwatch_mini.jpg" alt="OverWatch" />
-            </div>
-            <div class="column-right">
-              <ul>
-                <li>Skull Part II</li>
-                <li>OverWatch</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
+      </aside>
+    </section>
     <footer>
-      <div class="footer_container">
-        <div class="footer_main">
-          <a href="#" class="vertical_line">faq</a>
-          <a href="#" class="vertical_line">about GameHub</a>
-          <a href="#" class="vertical_line">privacy policy</a>
-          <a href="#" class="vertical_line">terms</a>
-          <a href="#" class="vertical_line">support</a>
-          <a href="contact.html" class="vertical_line">contact</a>
+        <div class="footer-main">
+          <a href="#" class="vertical-line">faq</a>
+          <a href="#" class="vertical-line">about GameHub</a>
+          <a href="#" class="vertical-line">privacy policy</a>
+          <a href="#" class="vertical-line">terms</a>
+          <a href="#" class="vertical-line">support</a>
+          <a href="contact.html" class="vertical-line">contact</a>
         </div>
-        <div class="footer_social">
-          <i class="fab fa-2x fa-facebook zoom"></i>
-          <i class="fab fa-2x fa-discord zoom"></i>
+        <div class="footer-social">
+          <i class="fab fa-2x fa-facebook "></i>
+          <i class="fab fa-2x fa-discord "></i>
         </div>
       </div>
     </footer>
