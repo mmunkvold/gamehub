@@ -1,0 +1,55 @@
+
+
+.logo {
+  max-width: 200px;
+}
+ */
+
+ */
+/* Search */
+/* #site-search {
+  width: 300px;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+button {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+
+ */
+/* Other */
+.orange-text {
+  color: #f29727;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.vertical_line {
+  padding: 0px 20px;
+  border-right: 2px solid #fff;
+}
+
+.horizontal_line {
+  padding: 10px;
+  border-bottom: 2px solid #dddddd;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
+  gap: 10px;
+}
+
+.arrow {
+  padding-top: 100px;
+}

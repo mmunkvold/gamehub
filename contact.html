@@ -9,46 +9,66 @@
     <link href="css/contact.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://monicanikolaisen-gamehub.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2388834, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
-      <section class="container">
-        <a href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
-        <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-        <form action="/search.html" method="GET">
-          <input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" />
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="container">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <a class="logo" href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+        <h3 class="slogan wider-item">BUY, PLAY and SELL GAMES!</h3>
+        <form action="search.html" method="GET">
+          <input type="search" id="search" placeholder="search site" class="search-input" />
         </form>
-        <div class="item">
-          <a href="signup.html" class="signup">Sign up</a>
-          <p></p>
-          <a href="login.html" class="login_link">already a user? login</a>
-        </div>
-      </section>
+        <a href="search.html"><i class="fas fa-search"></i></a>
+      </div>
       <nav>
-        <div class="container-nav">
-          <div class="nav_main">
-            <a href="index.html" class="vertical_line active">Home</a>
-            <a href="#" class="vertical_line">New Games</a>
-            <a href="#" class="vertical_line">Used Games</a>
-            <a href="#" class="vertical_line">Community</a>
-            <a href="contact.html" class="vertical_line">Contact</a>
-          </div>
-          <div class="nav_checkout">
-            <a href="checkout.html" class="vertical_line nav_checkout">Checkout</a>
-            <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a>
-          </div>
+        <div class="nav-main">
+          <a href="index.html" class="vertical-line">Home</a>
+          <a href="#" class="vertical-line">New Games</a>
+          <a href="#" class="vertical-line">Used Games</a>
+          <a href="#" class="vertical-line">Community</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="nav-signup">
+          <a href="signup.html">Login/Sign up</a>
+        </div>
+        <div class="nav-checkout">
+          <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="nav-checkout" /></a>
         </div>
       </nav>
     </header>
     <main>
-      <img src="images/gamerwheadset_large.jpg" alt="a gamer in front of a computer" class="img" />
-      <h1>Contact Us</h1>
-      <p>
-        Sometimes you need to contact us, but before you do - check out our <a href="#">FAQ page.</a> Maybe you will find an answer to your question
-        there.
-      </p>
-      <p>We also have a <a href="#">support page</a> for more technical help, and <a href="#">chat</a> available.</p>
-      <p>You can also send us a message:</p>
+      <div class="container-contact">
+        <div>
+          <img src="images/gamerwheadset_large.jpg" alt="a gamer in front of a computer" class="img" />
+        </div>
+        <div>
+          <h1>Contact Us</h1>
+          <p>
+            Sometimes you need to contact us, but before you do - check out our <a href="#">FAQ page.</a> Maybe you will find an answer to your
+            question there.
+          </p>
+          <p>We also have a <a href="#">support page</a> for more technical help, and <a href="#">chat</a> available.</p>
+          <p>You can also send us a message:</p>
+        </div>
+      </div>
       <form action="#" method="POST">
         <fieldset>
           <label for="full_name" class="nohover">Your name:</label>
@@ -68,16 +88,16 @@
       </form>
     </main>
     <footer>
-      <div class="footer_container">
-        <div class="footer_main">
-          <a href="#" class="vertical_line">faq</a>
-          <a href="#" class="vertical_line">about GameHub</a>
-          <a href="#" class="vertical_line">privacy policy</a>
-          <a href="#" class="vertical_line">terms</a>
-          <a href="#" class="vertical_line">support</a>
-          <a href="contact.html" class="vertical_line">contact</a>
+      <div class="footer-container">
+        <div class="footer-main">
+          <a href="#" class="vertical-line">faq</a>
+          <a href="#" class="vertical-line">about GameHub</a>
+          <a href="#" class="vertical-line">privacy policy</a>
+          <a href="#" class="vertical-line">terms</a>
+          <a href="#" class="vertical-line">support</a>
+          <a href="contact.html" class="vertical-line">contact</a>
         </div>
-        <div class="footer_social">
+        <div class="footer-social">
           <i class="fab fa-2x fa-facebook zoom"></i>
           <i class="fab fa-2x fa-discord zoom"></i>
         </div>

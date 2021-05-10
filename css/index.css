@@ -2,63 +2,58 @@
   background-color: #6e6d6d;
   color: #fff;
   display: flex;
-  padding-right: 40px;
+  flex-direction: column;
+  padding: 40px 20px;
 }
 
-.featured_image {
-  padding: 0 30px 20px 0;
-  margin-left: 20px;
-}
-
-.featured h2 {
-  color: #fff;
-  padding: 110px 20px 0px 0px;
-  margin-top: 0;
+.featured img {
+  margin: 0 auto;
 }
 
 .featured p {
-  padding: 10px 20px 0px 0px;
+  margin-top: 0;
 }
 
-.wrapper {
-  display: flex;
-}
-
-main {
-  flex: 2;
-}
-
-aside {
-  flex: 1;
-}
-
-.games_wrapper {
+.games-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.game_item {
+.games-wrapper a {
+  color: #6e6d6d;
+}
+
+.games-wrapper a:hover,
+.games-wrapper a:focus {
+  color: #731813;
+}
+
+.game-item {
   position: relative;
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
 
-.new_games {
+.new-games {
   color: #bf4f36;
-  margin: 20px;
+  margin: 20px 20px 0;
 }
 
-.used_games {
+.used-games {
   color: #43db64;
-  margin: 20px;
+  margin: 20px 20px 0;
 }
 
+.seemore {
+  position: relative;
+  top: 7em;
+}
 /* Right Column Home Page */
 .recommended {
   background-color: #dddddd;
   box-shadow: 10px 5px 5px 5px grey;
-  margin: 10px 0px auto;
+  margin: 10px 10px auto;
   padding: 10px 30px 20px;
 }
 
@@ -67,8 +62,69 @@ aside {
   margin: 0 auto;
 }
 
+.recommended h4 {
+  font-style: italic;
+  box-shadow: none;
+  text-align: center;
+}
 .recommended h3 {
   font-style: italic;
   box-shadow: none;
   text-align: center;
+}
+
+/* =======================
+     Media Queries 
+==========================*/
+@media (min-width: 600px) {
+}
+
+/* =========================== */
+
+@media (min-width: 660px) {
+  .featured {
+    flex-direction: row;
+    gap: 3em;
+  }
+}
+/* =========================== */
+
+@media (min-width: 750px) {
+  .games-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .seemore {
+    position: relative;
+    top: 1.5em;
+  }
+}
+
+/* =========================== */
+
+@media (min-width: 880px) {
+}
+
+/* =========================== */
+
+@media (min-width: 960px) {
+  .column-1 {
+    max-width: 500px;
+  }
+  .column-2 {
+    max-width: 800px;
+  }
+  .featured h2 {
+    margin-top: 3em;
+  }
+  .body-wrapper {
+    display: flex;
+  }
+  main {
+    flex: 3;
+  }
+
+  aside {
+    flex: 1;
+    margin-top: 3em;
+  }
 }

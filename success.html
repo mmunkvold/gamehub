@@ -9,35 +9,49 @@
     <link href="css/success.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://monicanikolaisen-gamehub.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2388834, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
-      <section class="container">
-        <a href="index.html"> <img src="icons/logo_darkmode.png" alt="GameHub Logo" /></a>
-        <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-        <form action="/search.html" method="GET">
-          <input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" />
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="container">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <a class="logo" href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+        <h3 class="slogan wider-item">BUY, PLAY and SELL GAMES!</h3>
+        <form action="search.html" method="GET">
+          <input type="search" id="search" placeholder="search site" class="search-input" />
         </form>
-        <div class="item">
-          <p style="font-style: italic; font-size: 0.8em">you are logged in as</p>
-          <p class="account" style="font-weight: bold; text-transform: uppercase">Monica</p>
-        </div>
-      </section>
+        <a href="search.html"><i class="fas fa-search"></i></a>
+      </div>
       <nav>
-        <section class="account_menu">
-          <div class="account_menu-items">
-            <a href="index.html" class="vertical_line">Back to GameHub</a>
-            <a href="#" class="vertical_line active_account">My account</a>
-            <a href="#" class="vertical_line">My games</a>
-            <a href="#" class="vertical_line">My wishlist</a>
-            <a href="#" class="vertical_line">Gift a fellow gamer</a>
-            <a href="#" class="vertical_line">Go to community</a>
-            <a href="#" class="vertical_line">My salespage</a>
-          </div>
-          <div class="nav_checkout_account">
-            <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a>
-          </div>
-        </section>
+        <div class="nav-main">
+          <a href="index.html" class="vertical-line">Home</a>
+          <a href="#" class="vertical-line">New Games</a>
+          <a href="#" class="vertical-line">Used Games</a>
+          <a href="#" class="vertical-line">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-signup">
+          <a href="signup.html">Login/Sign up</a>
+        </div>
+        <div class="nav-checkout">
+          <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="nav-checkout" /></a>
+        </div>
       </nav>
     </header>
     <main>
@@ -58,16 +72,16 @@
       </section>
     </main>
     <footer>
-      <div class="footer_container">
-        <div class="footer_main">
-          <a href="#" class="vertical_line">faq</a>
-          <a href="#" class="vertical_line">about GameHub</a>
-          <a href="#" class="vertical_line">privacy policy</a>
-          <a href="#" class="vertical_line">terms</a>
-          <a href="#" class="vertical_line">support</a>
-          <a href="contact.html" class="vertical_line">contact</a>
+      <div class="footer-container">
+        <div class="footer-main">
+          <a href="#" class="vertical-line">faq</a>
+          <a href="#" class="vertical-line">about GameHub</a>
+          <a href="#" class="vertical-line">privacy policy</a>
+          <a href="#" class="vertical-line">terms</a>
+          <a href="#" class="vertical-line">support</a>
+          <a href="contact.html" class="vertical-line">contact</a>
         </div>
-        <div class="footer_social">
+        <div class="footer-social">
           <i class="fab fa-2x fa-facebook zoom"></i>
           <i class="fab fa-2x fa-discord zoom"></i>
         </div>

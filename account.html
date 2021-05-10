@@ -9,39 +9,48 @@
     <link href="css/account.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/ff8ec4a7db.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://monicanikolaisen-gamehub.netlify.app/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2388834,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
   </head>
   <body>
     <header>
-      <section class="container">
-        <a href="index.html"> <img src="icons/logo_darkmode.png" alt="GameHub Logo" /></a>
-        <h3 class="wider_item">BUY, PLAY and SELL GAMES!</h3>
-        <form action="/search.html" method="GET">
-          <input type="search" placeholder="Search this site &hellip;" name="search" id="site-search" />
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="container">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <a class="logo" href="index.html"> <img src="icons/logo.png" alt="GameHub Logo" /></a>
+        <h3 class="slogan wider-item">BUY, PLAY and SELL GAMES!</h3>
+        <form action="search.html" method="GET">
+          <input type="search" id="search" placeholder="search site" class="search-input" />
         </form>
-        <div class="item">
-          <p style="font-style: italic; font-size: 0.8em">you are logged in as</p>
-          <p class="account" style="font-weight: bold; text-transform: uppercase">Monica</p>
-        </div>
-      </section>
+        <a href="search.html"><i class="fas fa-search"></i></a>
+      </div>
       <nav>
-        <section class="account_menu">
-          <div class="account_menu-items">
-            <a href="index.html" class="vertical_line">Back to GameHub</a>
-            <a href="#" class="vertical_line active_account">My account</a>
-            <a href="#" class="vertical_line">My games</a>
-            <a href="#" class="vertical_line">My wishlist</a>
-            <a href="#" class="vertical_line">Gift a fellow gamer</a>
-            <a href="#" class="vertical_line">Go to community</a>
-            <a href="#" class="vertical_line">My salespage</a>
-          </div>
-          <div class="nav_checkout_account">
-            <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="zoom" /></a>
-          </div>
-        </section>
+        <div class="nav-main">
+          <a href="index.html" class="vertical-line">Home</a>
+          <a href="#" class="vertical-line">New Games</a>
+          <a href="#" class="vertical-line">Used Games</a>
+          <a href="#" class="vertical-line">Community</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-signup">
+          <a href="signup.html">Login/Sign up</a>
+        </div>
+        <div class="nav-checkout">
+          <a href="checkout.html"><img src="icons/cart.png" alt="Shopping cart" class="nav-checkout" /></a>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="background">
+      <section>
         <video class="center video" width="450" height="253" autoplay="autoplay"><source src="video/welcome.mp4" type="video/mp4" /></video>
         <h3>What do you want to do today?</h3>
         <section class="todo-container">
@@ -62,21 +71,21 @@
           </div>
         </section>
       </section>
-      <section class="background">
+      <section>
         <div class="gifted">
           <h3>YOU'VE BEEN GIFTED!</h3>
           <p>
-            One of your fellow gamers <span class="orange-text">Yoto</span>, has gifted you <span class="orange-text">3000 coins </span> in<strong
-              >Haiko!</strong
+            One of your fellow gamers <span class="orange-text">Yoto</span>, has gifted you <span class="orange-text">3000 coins </span> in<strong></strong>
+              Haiko!</strong
             >
           </p>
-          <p>Go to game to collect this gift and say <strong>THANK YOU!</strong></p>
+          <a href="#" class="go-game">go to game</a>
         </div>
       </section>
-      <section class="background">
+      <section>
         <h2>Did you know?</h2>
         <div class="wrapper">
-          <div class="wrapper_item">
+          <div class="wrapper-item">
             <h3>Send your wishlist</h3>
             <p>
               After you have created your wishilist you can send it to whomever wants to buy you a present. So the next time your mother wonders what
@@ -87,7 +96,7 @@
             <a href="#" class="wishlist">send my wishlist</a>
             <p></p>
           </div>
-          <div class="wrapper_item">
+          <div class="wrapper-item">
             <h3>Gift a fellow gamer</h3>
             <p>
               You can gift a fellow gamer from within your games. Several games has the option to gift someone you play together with, or someone else
@@ -96,7 +105,7 @@
             <p></p>
             <a href="#" class="gift-gamer">gift a fellow gamer</a>
           </div>
-          <div class="wrapper_item">
+          <div class="wrapper-item">
             <h3>Invite friends</h3>
             <p>
               Invite your friends to join GameHub and you can <strong>earn coins</strong> or <strong>extra equipment</strong> in a game of your
@@ -109,16 +118,16 @@
       </section>
     </main>
     <footer>
-      <div class="footer_container">
-        <div class="footer_main">
-          <a href="#" class="vertical_line">faq</a>
-          <a href="#" class="vertical_line">about GameHub</a>
-          <a href="#" class="vertical_line">privacy policy</a>
-          <a href="#" class="vertical_line">terms</a>
-          <a href="#" class="vertical_line">support</a>
-          <a href="contact.html" class="vertical_line">contact</a>
+      <div class="footer-container">
+        <div class="footer-main">
+          <a href="#" class="vertical-line">faq</a>
+          <a href="#" class="vertical-line">about GameHub</a>
+          <a href="#" class="vertical-line">privacy policy</a>
+          <a href="#" class="vertical-line">terms</a>
+          <a href="#" class="vertical-line">support</a>
+          <a href="contact.html" class="vertical-line">contact</a>
         </div>
-        <div class="footer_social">
+        <div class="footer-social">
           <i class="fab fa-2x fa-facebook zoom"></i>
           <i class="fab fa-2x fa-discord zoom"></i>
         </div>

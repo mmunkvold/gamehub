@@ -1,63 +1,30 @@
-.container {
+.container-search {
   display: flex;
-}
-
-main {
-  flex: 3;
-  text-align: center;
-}
-
-aside {
-  flex: 1;
+  padding-left: 15px;
 }
 
 /* Search Result */
-.gamespage_wrapper {
+.gamespage-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 50px;
-  margin-left: 20px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
-.gamespage_wrapper p {
+.gamespage-wrapper p {
   padding: 0;
 }
 
-.gamespage_wrapper img {
+.gamespage-wrapper img {
   width: 60%;
-}
-.seemore_wrapper {
-  text-align: center;
-}
-
-.seemore {
-  border-radius: 20px;
-  background-color: #fff;
-  font-size: 1.5em;
-  text-transform: lowercase;
-  text-align: center;
-  padding: 10px 20px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-
-.seemore:hover {
-  background-color: lightgrey;
-  color: #fff;
-  border: 2px solid lightgrey;
 }
 
 /* Sort By */
 form {
-  max-width: 200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
-}
-
-fieldset {
-  box-shadow: 1px 1px 1px 1px grey;
+  max-width: 270px;
+  margin: 50px auto;
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.7rem;
 }
 
 label[for="newest"],
@@ -74,7 +41,6 @@ label[for="newest"],
   color: #000;
   text-transform: none;
   box-shadow: none;
-  padding: 5px;
 }
 
 input[type="checkbox"],
@@ -89,10 +55,10 @@ input[type="checkbox"],
 }
 
 input[type="checkbox"] {
-  display: inline;
-  margin-right: 30px;
+  display: inline-block;
+  margin-right: 10px;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 input[type="sort"] {
@@ -113,4 +79,43 @@ input:hover {
 
 .nohover {
   pointer-events: none;
+}
+/* =======================
+     Media Queries 
+==========================*/
+@media (min-width: 600px) {
+}
+
+/* =========================== */
+
+@media (min-width: 660px) {
+}
+/* =========================== */
+
+@media (min-width: 750px) {
+  .container-search {
+    margin-top: 3em;
+  }
+
+  .gamespage-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  form {
+    max-width: 470px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+}
+
+/* =========================== */
+
+@media (min-width: 880px) {
+}
+
+/* =========================== */
+
+@media (min-width: 960px) {
+  .gamespage-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

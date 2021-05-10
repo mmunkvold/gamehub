@@ -4,12 +4,12 @@ body {
   margin: 0;
 }
 
-.container_account {
+/* .container-account {
   display: flex;
   padding: 20px;
-}
+} */
 
-.item {
+/* .item {
   flex: 1;
   margin: 5px;
 }
@@ -43,7 +43,7 @@ body {
 .nav_checkout_account {
   padding: 0 10px 0 200px;
 }
-
+ */
 .success-container {
   display: flex;
   flex-direction: column;
@@ -51,6 +51,7 @@ body {
   align-items: center;
   font-weight: bold;
 }
+
 h2 {
   color: #fff;
 }
@@ -68,20 +69,44 @@ h2 {
   margin-bottom: 20px 0 50px;
 }
 
-.column-2 {
-  background-image: url("/gamecovers/skullpartII_large.jpg");
-  background-repeat: no-repeat;
+.column-2,
+.column-3 {
   background-position: center;
+  object-fit: contain;
   width: 650px;
   height: 400px;
+  padding-top: 90px;
   margin-bottom: 80px;
+}
+.column-2 {
+  background-image: url("/gamecovers/skullpartII_large.jpg");
 }
 
 .column-3 {
   background-image: url("/gamecovers/overwatch_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 650px;
-  height: 400px;
-  margin-bottom: 80px;
+}
+
+/* =======================
+     Media Queries 
+==========================*/
+@media (min-width: 600px) {
+}
+
+/* =========================== */
+
+@media (min-width: 660px) {
+}
+/* =========================== */
+
+@media (min-width: 750px) {
+}
+
+/* =========================== */
+
+@media (min-width: 880px) {
+}
+
+/* =========================== */
+
+@media (min-width: 960px) {
 }

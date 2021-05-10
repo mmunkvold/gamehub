@@ -4,7 +4,9 @@ body {
   margin: 0;
 }
 
-.container_account {
+/* NB!NB! Go to github to find the html for this account menu if want/need */
+
+/* .container-account {
   display: flex;
   padding: 20px;
 }
@@ -14,12 +16,12 @@ body {
   margin: 5px;
 }
 
-.wider_item {
+.wider-item {
   flex: 2;
   margin: 10px;
 }
 
-.active_account {
+.active-account {
   font-weight: bold;
   color: orangered;
 }
@@ -34,32 +36,34 @@ body {
   width: 200px;
 }
 
-.account_menu {
+.account-menu {
   display: flex;
   background-color: #43db64;
   color: #fff;
 }
 
-.nav_checkout_account {
+.nav-checkout-account {
   padding: 0 10px 0 200px;
-}
+} */
 
 .center {
   display: block;
   margin: 0 auto;
 }
+h1,
+h3 {
+  padding-top: 30px;
+}
 
 h2 {
-  text-align: center;
-  margin-top: 0;
   padding-top: 70px;
 }
 
 h1,
+h2,
 h3 {
   text-align: center;
   margin-top: 0;
-  padding-top: 30px;
 }
 
 .todo-container {
@@ -76,87 +80,102 @@ h3 {
 }
 
 .go-do {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #fff;
   color: #000;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
+  font-size: 1rem;
+  padding: 10px;
 }
 
-/* Tried to put these background properties in one line, 
-but that didn't work on the page */
+.column-1,
+.column-2,
+.column-3 {
+  flex: 1;
+  object-fit: cover;
+  border-radius: 50px;
+}
 .column-1 {
-  flex: 1;
-  background-image: url("/images/keyboard1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50px;
+  background-image: url("/images/keyboard2.jpg");
 }
-
 .column-2 {
-  flex: 1;
   background-image: url("/gamecovers/tetris.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50px;
 }
 
 .column-3 {
-  flex: 1;
   background-image: url("/images/redshirtgamer2.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 50px;
 }
 
 .gifted {
   margin: 0 20px 0;
   padding: 30px 30px;
-  border: 5px dotted #f29727;
+  border: 5px dotted yellow;
   text-align: center;
 }
 
-.wishlist {
-  display: block;
-  text-align: center;
+.go-game {
   border-radius: 20px;
-  background-color: #698ebf;
+  background-color: #43db64;
   color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin-top: 50px;
 }
 
-.gift-gamer {
-  display: block;
-  text-align: center;
-  border-radius: 20px;
-  background-color: #8da8d1;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
 }
 
+.wishlist,
+.gift-gamer,
 .invite {
   display: block;
   text-align: center;
   border-radius: 20px;
-  background-color: #43db64;
+
   color: #fff;
   font-size: 1.5em;
   padding: 15px;
   box-shadow: 2px 1px 1px 1px grey;
 }
+.wishlist {
+  background-color: #698ebf;
+}
 
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 50px 200px 0;
-  gap: 100px;
-  padding-bottom: 50px;
+.gift-gamer {
+  background-color: #8da8d1;
+}
+
+.invite {
+  background-color: #29773a;
+}
+
+/* =======================
+     Media Queries 
+==========================*/
+@media (min-width: 600px) {
+}
+
+/* =========================== */
+
+@media (min-width: 660px) {
+}
+/* =========================== */
+
+@media (min-width: 750px) {
+  .wrapper {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+/* =========================== */
+
+@media (min-width: 880px) {
+}
+
+/* =========================== */
+
+@media (min-width: 960px) {
 }
