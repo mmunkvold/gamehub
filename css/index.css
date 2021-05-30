@@ -1,6 +1,6 @@
 .featured {
   background-image: url("../images/cover.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   border-radius: 7px;
