@@ -1,6 +1,5 @@
 .top-section {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 @media (min-width: 660px) {
@@ -13,9 +12,11 @@
 .fa-user-astronaut {
   display: none;
 }
+
 @media (min-width: 660px) {
   .fa-user-astronaut {
-    font-size: 3em;
+    display: block;
+    font-size: 2em;
     color: white;
     padding-left: 0.5em;
     padding-bottom: 0.2em;
@@ -27,14 +28,15 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1.5em;
-
   background: #1c8554;
 }
 @media (min-width: 660px) {
   .account-menu {
-    width: 200px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: left;
+    width: 250px;
     padding: 2em 1.5em;
-    /* margin-bottom: 10em; */
     max-height: 300px;
     background: #1c8554;
     border-radius: 0 7px 7px 0;
@@ -51,8 +53,6 @@
 .currently-playing {
   width: 50%;
   flex: 1;
-  /* display: flex;
-  flex-direction: column; */
 }
 .currently-playing img {
   max-width: 50%;
@@ -110,9 +110,7 @@ h3 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* align-items: center; */
   font-weight: bold;
-  /* border-radius: 50px; */
   gap: 50px;
   margin: 0 auto;
 }
@@ -123,9 +121,7 @@ h3 {
 @media (min-width: 660px) {
   .todo-container {
     flex-direction: row;
-    /* margin: 0 auto 0; */
     max-width: 1200px;
-    /* background-size: cover; */
     justify-content: space-around;
   }
 }
@@ -142,7 +138,6 @@ h3 {
 .box-5,
 .box-6,
 .box-7 {
-  /* margin: 1em 0 2.1em; */
   margin: 0 auto;
   width: 20%;
 }
@@ -150,7 +145,6 @@ h3 {
 .box-1,
 .box-2,
 .box-3 {
-  /* min-width: 3em; */
   max-width: 200px;
 }
 
@@ -160,60 +154,8 @@ h3 {
 .box-7 {
   max-width: 130px;
 }
-/* .box-1 {
-  background-image: url("/images/keyboard2.jpg");
-}
-
-.box-2 {
-  background-image: url("/gamecovers/tetris.jpg");
-}
-
-.box-3 {
-  background-image: url("/gamecovers/notatoy.jpg");
-}
-
-.box-4 {
-  background-image: url("/images/redshirtgamer2.jpg");
-} */
-
-/* .box-1 {
-  background-image: url("/icons/gamepad.png");
-}
-
-.box-2 {
-  background-image: url("/icons/cart.png");
-}
-
-.box-3 {
-  background-image: url("/icons/money.png");
-}
-
-.box-4 {
-  background-image: url("/icons/headset.png");
-}
-.box-5 {
-  background-image: url("/icons/heart.png");
-}
-
-.box-6 {
-  background-image: url("/icons/coins.png");
-}
-
-.box-7 {
-  background-image: url("/icons/letter.png");
-} */
-
-/* .go-game {
-  border-radius: 20px;
-  background-color: #1c8554;
-  color: #fff;
-  font-size: 1rem;
-  padding: 10px 15px;
-  margin-top: 50px;
-} */
 
 .wrapper {
-  /* display: flex; */
   flex-direction: column;
   padding: 0 30px;
   max-width: 900px;
@@ -224,31 +166,9 @@ h3 {
   width: 40%;
 }
 
-/* =======================
-     Media Queries 
-==========================*/
-@media (min-width: 600px) {
-}
-
-/* =========================== */
-
-@media (min-width: 660px) {
-}
-/* =========================== */
-
 @media (min-width: 750px) {
   .wrapper {
     flex-direction: row;
     gap: 5rem;
   }
-}
-
-/* =========================== */
-
-@media (min-width: 880px) {
-}
-
-/* =========================== */
-
-@media (min-width: 960px) {
 }

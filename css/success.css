@@ -34,28 +34,3 @@ h3 {
 .column-3 {
   background-image: url("/gamecovers/overwatch_large.jpg");
 }
-
-/* =======================
-     Media Queries 
-==========================*/
-@media (min-width: 600px) {
-}
-
-/* =========================== */
-
-@media (min-width: 660px) {
-}
-/* =========================== */
-
-@media (min-width: 750px) {
-}
-
-/* =========================== */
-
-@media (min-width: 880px) {
-}
-
-/* =========================== */
-
-@media (min-width: 960px) {
-}

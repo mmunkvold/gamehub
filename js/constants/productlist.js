@@ -49,7 +49,7 @@ export const productArrayNewGames = [
   },
   {
     name: "Let Her In",
-    description: "Aliquam eos natus sint nihil aut aliquid hic necessitatibus esse nobis in minus.",
+    description: "Aliquam eos natus sint nihil aut aliquid hic necessitatibus.",
     image: "gamecovers/letherin.jpg",
     id: "7",
     label: "new",

@@ -12,7 +12,6 @@
 @media (min-width: 750px) {
   .details {
     flex-direction: row;
-    /* justify-content: space-around; */
     gap: 4em;
   }
   .left {
@@ -21,9 +20,4 @@
   .right {
     margin-right: auto;
   }
-}
-
-/* =========================== */
-
-@media (min-width: 660px) {
 }

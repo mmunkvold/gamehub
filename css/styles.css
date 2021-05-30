@@ -85,6 +85,7 @@ button:hover {
 }
 .login-btn {
   margin-right: 1em;
+  margin-bottom: 0.5em;
   font-size: 1.5rem;
 }
 
@@ -108,7 +109,8 @@ button:hover {
 }
 
 .logo {
-  margin: 1em auto;
+  margin: 1.5em 3em 0;
+  width: 100px;
 }
 
 .login-signup {
@@ -146,24 +148,11 @@ nav {
   z-index: 1;
 }
 
-/* #close-menu {
-  display: none;
-}
-
-#close-menu:checked ~ nav {
-  display: block;
-}
- */
 nav a {
   font-size: 0.9rem;
   font-weight: bold;
   color: #fff;
 }
-
-/* .nav-checkout img {
-  max-width: 30px;
-  margin: 0 auto 10px;
-} */
 
 nav,
 footer {
@@ -190,7 +179,6 @@ footer {
   background-color: #6e6d6d;
   margin-top: 2em;
   padding: 1em;
-  /* overflow: hidden; */
   text-transform: lowercase;
 }
 
@@ -228,29 +216,14 @@ footer a {
 
 .orange-text {
   color: #f29727;
+  padding: 0 1em;
 }
-
-/* .white-text {
-  color: #fff;
-}  */
 
 .fa-shopping-cart {
   font-size: 1.5rem;
   margin: 10px auto;
   position: relative;
 }
-
-/* .cart-count {   /* Denne er ikke i bruk pr nå, må finne ut hvordan 
-  border-radius: 40px;
-  background: red;
-  color: #fff;
-  text-align: center;
-  position: absolute;
-  top: 5px;
-  right: 25px;
-  padding: 0 5px;
-  display: none;
-} */
 
 .fa-heart {
   color: orangered;
@@ -341,13 +314,6 @@ footer a {
 
 /* =========================== */
 
-@media (min-width: 660px) {
-}
-
-@media (min-width: 760px) {
-}
-/* =========================== */
-
 @media (min-width: 760px) {
   #menu-fa-bars {
     display: none;
@@ -370,11 +336,7 @@ footer a {
     padding: 10px;
     text-align: left;
   }
-  /*  .nav-signup {
-    flex: 1;
-    background-color: #1c8554;
-    padding: 10px;
-  } */
+
   .nav-checkout {
     flex: 1;
     background-color: #f29727;
@@ -397,8 +359,6 @@ footer a {
     display: none;
   }
 }
-
-/* =========================== */
 
 /* =========================== */
 

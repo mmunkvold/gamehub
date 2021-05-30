@@ -4,10 +4,6 @@
   padding: 1.3em;
 }
 
-/* p a {
-  color: grey;
-} */
-
 #contact-img {
   max-width: 50%;
 }
@@ -15,27 +11,9 @@
 /* =======================
      Media Queries 
 ==========================*/
-@media (min-width: 600px) {
-}
-
-/* =========================== */
-
-@media (min-width: 660px) {
-}
-/* =========================== */
 
 @media (min-width: 750px) {
   .container-contact {
     flex-direction: row;
   }
-}
-
-/* =========================== */
-
-@media (min-width: 880px) {
-}
-
-/* =========================== */
-
-@media (min-width: 960px) {
 }
