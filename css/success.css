@@ -1,49 +1,12 @@
-body {
-  background-color: #000;
-  color: #aaccff;
-  margin: 0;
-}
-
-/* .container-account {
-  display: flex;
-  padding: 20px;
-} */
-
-/* .item {
-  flex: 1;
-  margin: 5px;
-}
-
-.wider_item {
-  flex: 2;
-  margin: 10px;
-}
-
-.active_account {
-  font-weight: bold;
-  color: orangered;
-}
-
-.account {
-  background-color: #43db64;
-  border-radius: 15px;
-  color: #fff;
+h1,
+p {
   text-align: center;
-  padding: 15px;
-  margin: 0;
-  width: 200px;
 }
 
-.account_menu {
-  display: flex;
-  background-color: #43db64;
+h3 {
   color: #fff;
 }
 
-.nav_checkout_account {
-  padding: 0 10px 0 200px;
-}
- */
 .success-container {
   display: flex;
   flex-direction: column;
@@ -52,30 +15,16 @@ body {
   font-weight: bold;
 }
 
-h2 {
-  color: #fff;
-}
-
-.go-game {
-  border-radius: 20px;
-  background-color: #43db64;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 15px;
-  box-shadow: 2px 1px 1px 1px grey;
-}
-
 .column-1 {
-  margin-bottom: 20px 0 50px;
+  margin-bottom: 1em;
 }
 
 .column-2,
 .column-3 {
   background-position: center;
-  object-fit: contain;
-  width: 650px;
-  height: 400px;
-  padding-top: 90px;
+  background-size: cover;
+  width: 300px;
+  padding: 4em;
   margin-bottom: 80px;
 }
 .column-2 {

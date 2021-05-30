@@ -1,0 +1,139 @@
+.new-games,
+.used-games,
+.similar-games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.product {
+  margin: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  color: #999;
+}
+
+.product-image {
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #000;
+}
+
+.add-to-cart-btn {
+  background: rgb(240, 144, 84);
+}
+
+.add-to-cart-btn:hover {
+  border: 1px solid rgb(240, 144, 84);
+}
+
+#newbutton {
+  background: pink;
+}
+
+#usedbutton {
+  background: blue;
+  color: #fff;
+}
+
+/* =======================
+     Cart
+==========================*/
+
+.cart {
+  border: 5px solid #f29727;
+  max-width: 500px;
+  min-width: 200px;
+  padding: 15px;
+  margin: auto;
+  position: fixed;
+  right: 10px;
+  top: 140px;
+  display: none;
+  background: #f6f6f6;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .cart {
+    max-width: 600px;
+    min-width: 200px;
+    top: 163px;
+  }
+}
+
+.cart-image {
+  width: 50px;
+  background-size: cover;
+  margin-bottom: 0.5em;
+}
+
+.checkout-btn {
+  background: rgb(31, 129, 31);
+  color: #fff;
+}
+
+.checkout-btn:hover {
+  background: #fff;
+  color: rgb(31, 129, 31);
+  border: 2px solid rgb(31, 129, 31);
+}
+/* =======================
+     Checkout Page
+==========================*/
+.checkout-page {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  border-radius: 20px 0 px;
+  border: 2px solid lightgrey;
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  text-align: right;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+
+/* =======================
+     Media Query
+==========================*/
+
+@media (min-width: 650px) {
+  .new-games,
+  .used-games,
+  .similar-games {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 950px) {
+  .new-games,
+  .used-games,
+  .similar-games {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .new-games,
+  .used-games,
+  .similar-games {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

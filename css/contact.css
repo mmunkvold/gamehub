@@ -1,73 +1,15 @@
 .container-contact {
   display: flex;
   flex-direction: column;
+  padding: 1.3em;
 }
 
-p a {
+/* p a {
   color: grey;
-}
+} */
 
-/* Contact Form */
-form {
-  display: grid;
-  margin: auto;
-  max-width: 400px;
-}
-
-input,
-select,
-textarea {
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px 1px grey;
-  margin-bottom: 0.75em;
-  margin-right: 2em;
-  padding: 0.3em;
-  width: 100%;
-}
-
-textarea {
-  min-height: 100px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-label[for="full_name"],
-[for="email"],
-[for="subject"],
-[for="message"] {
-  background: #fff;
-  color: #000;
-  text-transform: none;
-  box-shadow: none;
-  margin: 0;
-  padding: 5px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-input[type="submit"] {
-  background: #43db64;
-  color: #fff;
-  text-transform: none;
-  border-radius: 10px;
-  font-size: 1.2em;
-  display: block;
-  margin: 15px auto;
-  width: 150px;
-  pointer-events: cursor;
-}
-
-input[type="search"] {
-  margin: 10px auto;
-}
-
-input:hover {
-  color: #43db64;
-  background-color: #fff;
-  border: 2px solid #43db64;
-}
-
-.nohover {
-  pointer-events: none;
+#contact-img {
+  max-width: 50%;
 }
 
 /* =======================

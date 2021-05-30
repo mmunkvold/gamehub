@@ -1,0 +1,141 @@
+/* =============
+      Form 
+  =================*/
+
+form {
+  padding: 1em;
+  background: #f8f8f8;
+  /* border-radius: 1.2em; */
+  /* display: block; */ /* NB! grid or block? se lenger nede her display: grid.... */
+  max-width: 400px;
+  margin: 0 auto;
+  /* display: grid; */
+}
+
+input,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px grey;
+  margin-bottom: 0.75em;
+  margin-right: 2em;
+  padding: 0.3em;
+  width: 100%;
+}
+textarea {
+  resize: none;
+  height: 9em;
+  min-height: 100px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* =============
+      Contact Form 
+  =================*/
+.btn-contact,
+.btn-login,
+.btn-signup {
+  background: #1c8554;
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  border-radius: 0.2rem;
+  box-shadow: 2px 2px 2px #b7b4b4;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+  background: #707070;
+  color: #fff;
+}
+
+/* input[type="submit"] {
+    background: #43db64;
+    color: #fff;
+    text-transform: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    display: block;
+    margin: 15px auto;
+    width: 150px;
+    pointer-events: cursor;
+  } */
+
+input[type="search"] {
+  margin: 10px auto;
+}
+
+/*input:hover {
+   color: #43db64;
+    background-color: #fff;
+    border: 2px solid #43db64; 
+}*/
+
+/* .nohover {
+    pointer-events: none;
+  } */
+/* =============
+     Search Form Heading 
+    =================*/
+#search-form {
+  background: none;
+  margin-top: 1.5em;
+}
+
+#search-input {
+  display: none;
+  box-shadow: none;
+}
+#search-btn {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #search-input,
+  #search-btn {
+    display: inline;
+    height: 35px;
+    border-radius: 0;
+    border: 1px solid grey;
+  }
+
+  #search-input {
+    width: 250px;
+  }
+
+  #search-btn {
+    padding: 0 10px;
+  }
+}
+/* =============
+     Error Messages 
+    =================*/
+.error,
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+.error {
+  display: none;
+}
+
+.success {
+  display: none;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  /* position: relative;
+  bottom: 2em;
+  left: 15em; */
+  margin: 0 auto;
+  padding: 2em;
+}

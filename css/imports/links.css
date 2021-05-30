@@ -1,15 +1,15 @@
-a {
+/* a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
   text-decoration: none;
   color: #698ebf;
 }
 
-/*  
+
   a:visited {
     color: #bf4f36;
   }
-  */
+ 
 
 a:hover {
   color: #f29727;
@@ -35,3 +35,4 @@ a:hover {
 .nohover {
   pointer-events: none;
 }
+ */
