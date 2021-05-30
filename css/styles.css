@@ -335,6 +335,7 @@ footer a {
   footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -342,9 +343,12 @@ footer a {
 
 @media (min-width: 660px) {
 }
+
+@media (min-width: 760px) {
+}
 /* =========================== */
 
-@media (min-width: 750px) {
+@media (min-width: 760px) {
   #menu-fa-bars {
     display: none;
   }
@@ -389,15 +393,12 @@ footer a {
     text-align: left;
     padding-left: 0;
   }
+  #nav-search {
+    display: none;
+  }
 }
 
 /* =========================== */
-
-@media (min-width: 800px) {
-  footer {
-    justify-content: space-between;
-  }
-}
 
 /* =========================== */
 

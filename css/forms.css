@@ -97,7 +97,7 @@ input[type="search"] {
   display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 760px) {
   #search-input,
   #search-btn {
     display: inline;
