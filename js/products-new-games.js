@@ -13,8 +13,8 @@ productArrayNewGames.forEach(function (product) {
     <div class="product">
     <a href="productpage.html"><p class="new-label">${product.label}</p>
     <div style="background-image: url(${product.image})" class="product-image")></div><h3>${product.name}</h3></a>
-    <div id="newbutton" class="product-price">Price: kr ${product.price},-</div>
-    <button class="add-to-cart-btn" data-product="${product.id}">Add to cart</button><i class="fas fa-heart"></i></div>`;
+    <div class="product-price">Price: kr ${product.price},-</div>
+    <button id="newbutton" class="add-to-cart-btn" data-product="${product.id}">Add to cart</button><i class="fas fa-heart"></i></div>`;
 });
 
 // adding items to cart

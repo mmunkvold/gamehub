@@ -63,7 +63,7 @@ function validateForm(event) {
     showSuccessMessage.style.display = "block";
     form.style.display = "none";
   } else {
-    console.log("something wrong with the form...");
+    /* console.log("something wrong with the form..."); */
   }
 }
 

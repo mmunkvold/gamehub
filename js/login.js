@@ -10,13 +10,15 @@ function validateForm(event) {
 
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
-    //console.log("email riktig ingen feilmelding skal vises");
   } else {
     emailError.style.display = "block";
-    //console.log("email feil feilmelding skal vises");
   }
-  showSuccessMessage.style.display = "block";
-  form.style.display = "none";
+
+  if (validateEmail(email.value) === true) {
+    showSuccessMessage.style.display = "block";
+    form.style.display = "none";
+  }
+  /* console.log("something wrong with the login..."); */
 }
 
 /* if (validateEmail(email.value) === true) {
